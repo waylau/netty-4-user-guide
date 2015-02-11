@@ -118,6 +118,6 @@ Writing a Discard Server 写个丢弃服务器
 6. 你关注过 option() 和 childOption() 吗？option() 是提供给[NioServerSocketChannel](http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html) 用来接收进来的连接。childOption() 是提供给由父管道 [ServerChannel](http://netty.io/4.0/api/io/netty/channel/ServerChannel.html) 接收到的连接，在这个例子中也是 NioServerSocketChannel。
 7. 我们继续，剩下的就是绑定端口然后启动服务。这里我们在机器上绑定了机器所有网卡上的 8080 端口。当然现在你可以多次调用 bind() 方法(基于不同绑定地址)。
 
-恭喜！你已经完成熟练地完成了第一个基于 Netty 的服务端程序。
+恭喜！你已经熟练地完成了第一个基于 Netty 的服务端程序。
 
 
