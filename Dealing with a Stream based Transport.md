@@ -116,5 +116,3 @@ Dealing with a Stream-based Transport 处理一个基于流的传输
 * 对于基于文本协议请看 [io.netty.example.telnet](http://netty.io/4.0/xref/io/netty/example/telnet/package-summary.html)
 
 *译者注：翻译版本的项目源码见 <https://github.com/waylau/netty-4-user-guide-demos> 中的`com.waylau.netty.demo.factorial` 和 `com.waylau.netty.demo.telnet` 包下*
-
-##
