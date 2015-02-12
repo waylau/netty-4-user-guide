@@ -67,6 +67,6 @@ Dealing with a Stream-based Transport 处理一个基于流的传输
 
 正如你所知的，你可以增加多个 [ChannelHandler](http://netty.io/4.0/api/io/netty/channel/ChannelHandler.html) 到[ChannelPipeline](http://netty.io/4.0/api/io/netty/channel/ChannelPipeline.html) ,因此你可以把一整个ChannelHandler 拆分成多个模块以减少应用的复杂程度，比如你可以把TimeClientHandler 拆分成2个处理器：
 
-TimeDecoder处理数据拆分的问题
-TimeClientHandler原始版本的实现
-幸运地是，Netty提供了一个可扩展的类，帮你完成TimeDecoder的开发。
+TimeDecoder 处理数据拆分的问题
+TimeClientHandler 原始版本的实现
+幸运地是，Netty 提供了一个可扩展的类，帮你完成 TimeDecoder 的开发。
