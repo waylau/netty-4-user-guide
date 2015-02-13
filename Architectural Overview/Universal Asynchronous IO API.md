@@ -16,6 +16,6 @@ Netty 有一个叫做 [Channel](http://netty.io/4.0/api/io/netty/channel/package
 * 基于 OIO 的 UDP/IP 传输, 和
 * 本地传输 (见 io.netty.channel.local).
 
-切换不同的传输实现通常只需对代码进行几行的修改调整，例如选择一个不同的 ChannelFactory 实现。
+切换不同的传输实现通常只需对代码进行几行的修改调整，例如选择一个不同的 [ChannelFactory](http://netty.io/4.0/api/io/netty/bootstrap/ChannelFactory.html) 实现。
 
 此外，你甚至可以利用新的传输实现没有写入的优势，只需替换一些构造器的调用方法即可，例如串口通信。而且由于核心 API 具有高度的可扩展性，你还可以完成自己的传输实现。
