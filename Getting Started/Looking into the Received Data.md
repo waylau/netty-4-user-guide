@@ -8,7 +8,7 @@ Looking into the Received Data 查看收到的数据
 
 ![](http://99btgc01.info/uploads/2015/02/telnet2%281%29.jpg)
 
-然而我们能说这个服务端是正常运行了吗？事实上我们也不知道,因为他是一个 discard 服务，你根本不可能得到任何的响应。为了证明他仍然是在正常工作的，让我们修改服务端的程序来打印出他到底接收到了什么。
+然而我们能说这个服务端是正常运行了吗？事实上我们也不知道，因为他是一个 discard 服务，你根本不可能得到任何的响应。为了证明他仍然是在正常工作的，让我们修改服务端的程序来打印出他到底接收到了什么。
 
 我们已经知道 channelRead() 方法是在数据被接收的时候调用。让我们放一些代码到 DiscardServerHandler 类的 channelRead() 方法。
 
@@ -25,10 +25,11 @@ Looking into the Received Data 查看收到的数据
 	    }
 	}
 
-1. 这个低效的循环事实上可以简化为:System.out.println(in.toString(io.netty.util.CharsetUtil.US_ASCII))
-2. 或者，你可以在这里调用 in.release()。
+1.这个低效的循环事实上可以简化为:System.out.println(in.toString(io.netty.util.CharsetUtil.US_ASCII))
 
-如果你再次运行telnet命令，你将会看到服务端打印出了他所接收到的消息。
+2.或者，你可以在这里调用 in.release()。
+
+如果你再次运行 telnet 命令，你将会看到服务端打印出了他所接收到的消息。
 
 ![](http://99btgc01.info/uploads/2015/02/telnet3%281%29.jpg)
 
