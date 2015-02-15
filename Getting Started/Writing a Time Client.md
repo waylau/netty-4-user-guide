@@ -38,7 +38,7 @@ Writing a Time Client 写个时间客户端
 
 1.BootStrap 和 [ServerBootstrap](http://netty.io/4.0/api/io/netty/bootstrap/ServerBootstrap.html) 类似,不过他是对非服务端的 channel 而言，比如客户端或者无连接传输模式的 channel。
 
-2.如果你只指定了一个 [EventLoopGroup](http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html)，那他就会即作为一个 boss group ，也会作为一个 workder ，尽管客户端不需要使用到 boss worker 。
+2.如果你只指定了一个 [EventLoopGroup](http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html)，那他就会即作为一个 boss group ，也会作为一个 workder group，尽管客户端不需要使用到 boss worker 。
 
 3.代替[NioServerSocketChannel](http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html)的是[NioSocketChannel](http://netty.io/4.0/api/io/netty/channel/socket/nio/NioSocketChannel.html),这个类在客户端channel 被创建时使用。
 
