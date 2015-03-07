@@ -22,3 +22,5 @@ This is the summary of my book.
 	* [Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型](Architectural Overview/Event Model based on the Interceptor Chain Pattern.md)
 	* [Advanced Components for More Rapid Development 适用快速开发的高级组件](Architectural Overview/Advanced Components for More Rapid Development.md)
 	* [Summary 总结](Architectural Overview/Summary.md)
+* Others 其他
+	* [Netty 实现聊天功能](http://www.waylau.com/netty-chat/)
