@@ -40,7 +40,7 @@ Netty 实现了 RFC 6455 和一些老版本的规范。请参阅[io.netty.handle
 
 ##Google Protocol Buffer 整合
 
-[Google Protocol Buffers](http://code.google.com/apis/protocolbuffers/docs/overview.html) 是快速实现一个高效的二进制协议的理想方案。通过使用 [ProtobufEncoder](http://static.netty.io/3.5/api/org/jboss/netty/handler/codec/protobuf/ProtobufEncoder.html) 和 [ProtobufDecoder](http://static.netty.io/3.5/api/org/jboss/netty/handler/codec/protobuf/ProtobufDecoder.html)，你可以把 Google Protocol Buffers 编译器 (protoc) 生成的消息类放入到 Netty 的codec 实现中。请参考“[LocalTime](http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/localtime/package-summary.html)”实例，这个例子也同时显示出开发一个由简单协议定义 的客户及服务端是多么的容易。
+[Google Protocol Buffers](http://code.google.com/apis/protocolbuffers/docs/overview.html) 是快速实现一个高效的二进制协议的理想方案。通过使用 [ProtobufEncoder](http://netty.io/4.0/api/io/netty/handler/codec/protobuf/ProtobufEncoder.html) 和 [ProtobufDecoder](http://netty.io/4.0/api/io/netty/handler/codec/protobuf/ProtobufDecoder.html)，你可以把 Google Protocol Buffers 编译器 (protoc) 生成的消息类放入到 Netty 的codec 实现中。请参考“[LocalTime](http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/localtime/package-summary.html)”实例，这个例子也同时显示出开发一个由简单协议定义 的客户及服务端是多么的容易。
  
 
 *译者注：翻译版本的项目源码见 <https://github.com/waylau/netty-4-user-guide-demos>* 
