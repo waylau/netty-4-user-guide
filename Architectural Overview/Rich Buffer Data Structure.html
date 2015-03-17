@@ -1,0 +1,616 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Rich Buffer Data Structure 丰富的缓冲实现 | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../Architectural Overview/Universal Asynchronous IO API.html" />
+    
+    
+    <link rel="prev" href="../Architectural Overview/Architectural Overview.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="1426557762603">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Preface 前言</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="Preface/The Problem.html">
+            
+                
+                    <a href="../Preface/The Problem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         The Problem 问题
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Preface/The Solution.html">
+            
+                
+                    <a href="../Preface/The Solution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         The Solution 解决
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="Getting Started/Getting Started.html">
+            
+                
+                    <a href="../Getting Started/Getting Started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Getting Started 开始
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="Getting Started/Before Getting Started.html">
+            
+                
+                    <a href="../Getting Started/Before Getting Started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Before Getting Started 开始之前
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="Getting Started/Writing a Discard Server.html">
+            
+                
+                    <a href="../Getting Started/Writing a Discard Server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Writing a Discard Server 写个丢弃服务器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="Getting Started/Looking into the Received Data.html">
+            
+                
+                    <a href="../Getting Started/Looking into the Received Data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Looking into the Received Data 查看收到的数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="Getting Started/Writing an Echo Server.html">
+            
+                
+                    <a href="../Getting Started/Writing an Echo Server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Writing an Echo Server 写个应答服务器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="Getting Started/Writing a Time Server.html">
+            
+                
+                    <a href="../Getting Started/Writing a Time Server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Writing a Time Server 写个时间服务器
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.5.1" data-path="Getting Started/Writing a Time Client.html">
+            
+                
+                    <a href="../Getting Started/Writing a Time Client.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                         Writing a Time Client 写个时间客户端
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5.2" data-path="Getting Started/Dealing with a Stream based Transport.html">
+            
+                
+                    <a href="../Getting Started/Dealing with a Stream based Transport.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                         Dealing with a Stream-based Transport 处理一个基于流的传输
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5.3" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
+            
+                
+                    <a href="../Getting Started/Speaking in POJO instead of ByteBuf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.3.</b>
+                        
+                         Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5.4" data-path="Getting Started/Shutting Down Your Application.html">
+            
+                
+                    <a href="../Getting Started/Shutting Down Your Application.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.4.</b>
+                        
+                         Shutting Down Your Application 关闭你的应用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5.5" data-path="Getting Started/Summary.html">
+            
+                
+                    <a href="../Getting Started/Summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.5.</b>
+                        
+                         Summary 总结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="Architectural Overview/Architectural Overview.html">
+            
+                
+                    <a href="../Architectural Overview/Architectural Overview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Architectural Overview 架构总览
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="3.1" data-path="Architectural Overview/Rich Buffer Data Structure.html">
+            
+                
+                    <a href="../Architectural Overview/Rich Buffer Data Structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Rich Buffer Data Structure 丰富的缓冲实现
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="Architectural Overview/Universal Asynchronous IO API.html">
+            
+                
+                    <a href="../Architectural Overview/Universal Asynchronous IO API.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Universal Asynchronous I/O API 统一的异步 I/O API
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+            
+                
+                    <a href="../Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="Architectural Overview/Advanced Components for More Rapid Development.html">
+            
+                
+                    <a href="../Architectural Overview/Advanced Components for More Rapid Development.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Advanced Components for More Rapid Development 适用快速开发的高级组件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="Architectural Overview/Summary.html">
+            
+                
+                    <a href="../Architectural Overview/Summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         Summary 总结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Others 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" >
+            
+                
+                    <a target="_blank" href="http://www.waylau.com/netty-chat/">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Netty 实现聊天功能
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_18">
+                    
+                        <h1 id="rich-buffer-data-structure-">Rich Buffer Data Structure 丰富的缓冲实现</h1>
+<p>Netty 使用自建的 buffer API，而不是使用 NIO 的 <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html?is-external=true" target="_blank">ByteBuffer</a> 来表示一个连续的字节序列。与 ByteBuffer 相比这种方式拥有明显的优势。Netty 使用新的 buffer 类型 <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a>，被设计为一个可从底层解决 ByteBuffer 问题，并可满足日常网络应用开发需要的缓冲类型。这些很酷的特性包括：</p>
+<ul>
+<li>如果需要，允许使用自定义的缓冲类型。</li>
+<li>复合缓冲类型中内置的透明的零拷贝实现。</li>
+<li>开箱即用的动态缓冲类型，具有像 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html?is-external=true" target="_blank">StringBuffer</a> 一样的动态缓冲能力。</li>
+<li>不再需要调用的flip()方法。</li>
+<li>正常情况下具有比 ByteBuffer 更快的响应速度。</li>
+</ul>
+<p>更多信息请参考：<a href="http://netty.io/4.0/api/io/netty/buffer/package-summary.html#package_description" target="_blank">io.netty.buffer 包描述</a></p>
+<h3 id="extensibility-">Extensibility 可扩展性</h3>
+<p>ByteBuf 具有丰富的操作集,可以快速的实现协议的优化。例如，ByteBuf 提供各种操作用于访问无符号值和字符串，以及在缓冲区搜索一定的字节序列。你也可以扩展或包装现有的缓冲类型用来提供方便的访问。自定义缓冲式仍然实现自 ByteBuf 接口，而不是引入一个不兼容的类型</p>
+<h3 id="transparent-zero-copy-">Transparent Zero Copy 透明的零拷贝</h3>
+<p>举一个网络应用到极致的表现，你需要减少内存拷贝操作次数。你可能有一组缓冲区可以被组合以形成一个完整的消息。网络提供了一种复合缓冲，允许你从现有的任意数的缓冲区创建一个新的缓冲区而无需没有内存拷贝。例如，一个信息可以由两部分组成；header 和 body。在一个模块化的应用，当消息发送出去时，这两部分可以由不同的模块生产和装配。</p>
+<pre> +--------+----------+
+ | header |   body   |
+ +--------+----------+
+ </pre>
+
+<p>如果你使用的是 ByteBuffer ，你必须要创建一个新的大缓存区用来拷贝这两部分到这个新缓存区中。或者，你可以在 NiO做一个收集写操作，但限制你将复合缓冲类型作为 ByteBuffer 的数组而不是一个单一的缓冲区，打破了抽象，并且引入了复杂的状态管理。此外，如果你不从 NIO channel 读或写，它是没有用的。</p>
+<pre><code>// 复合类型与组件类型不兼容。
+ByteBuffer[] message = new ByteBuffer[] { header, body };
+</code></pre><p>通过对比， ByteBuf 不会有警告，因为它是完全可扩展并有一个内置的复合缓冲区。</p>
+<pre><code>// 复合类型与组件类型是兼容的。
+ByteBuf message = Unpooled.wrappedBuffer(header, body);
+
+// 因此，你甚至可以通过混合复合类型与普通缓冲区来创建一个复合类型。
+ByteBuf messageWithFooter = Unpooled.wrappedBuffer(message, footer);
+
+// 由于复合类型仍是 ByteBuf，访问其内容很容易，
+//并且访问方法的行为就像是访问一个单独的缓冲区，
+//即使你想访问的区域是跨多个组件。
+//这里的无符号整数读取位于 body 和 footer
+messageWithFooter.getUnsignedInt(
+     messageWithFooter.readableBytes() - footer.readableBytes() - 1);
+</code></pre><h3 id="automatic-capacity-extension-">Automatic Capacity Extension 自动容量扩展</h3>
+<p>许多协议定义可变长度的消息，这意味着没有办法确定消息的长度，直到你构建的消息。或者，在计算长度的精确值时，带来了困难和不便。这就像当你建立一个字符串。你经常估计得到的字符串的长度，让 StringBuffer 扩大了其本身的需求。</p>
+<pre><code>// 一种新的动态缓冲区被创建。在内部，实际缓冲区是被“懒”创建，从而避免潜在的浪费内存空间。
+ByteBuf b = Unpooled.buffer(4);
+
+// 当第一个执行写尝试，内部指定初始容量 4 的缓冲区被创建
+b.writeByte(&#39;1&#39;);
+
+b.writeByte(&#39;2&#39;);
+b.writeByte(&#39;3&#39;);
+b.writeByte(&#39;4&#39;);
+
+// 当写入的字节数超过初始容量 4 时，
+//内部缓冲区自动分配具有较大的容量
+b.writeByte(&#39;5&#39;);
+</code></pre><h3 id="better-performance-">Better Performance 更好的性能</h3>
+<p>最频繁使用的缓冲区  ByteBuf 的实现是一个非常薄的字节数组包装器（比如，一个字节）。与 ByteBuffer 不同，它没有复杂的边界和索引检查补偿，因此对于 JVM 优化缓冲区的访问更加简单。更多复杂的缓冲区实现是用于拆分或者组合缓存，并且比 ByteBuffer 拥有更好的性能。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Architectural Overview/Architectural Overview.html" class="navigation navigation-prev " aria-label="Previous page: Architectural Overview 架构总览"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Architectural Overview/Universal Asynchronous IO API.html" class="navigation navigation-next " aria-label="Next page: Universal Asynchronous I/O API 统一的异步 I/O API"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
