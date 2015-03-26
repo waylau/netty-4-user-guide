@@ -24,3 +24,4 @@ This is the summary of my book.
 	- [Summary 总结](Architectural Overview/Summary.md)
 * Others 其他
 	- [Netty 实现聊天功能](http://www.waylau.com/netty-chat/)
+	- [Netty 实现 WebSocket 聊天功能](http://www.waylau.com/netty-websocket-chat/)
