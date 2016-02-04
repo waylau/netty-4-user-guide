@@ -7,7 +7,7 @@ This is the summary of my book.
 	- [The Solution 解决](Preface/The Solution.md)
 * [Getting Started 开始](Getting Started/Getting Started.md)
  	- [Before Getting Started 开始之前](Getting Started/Before Getting Started.md)
- 	- [Writing a Discard Server 写个丢弃服务器](Getting Started/Writing a Discard Server.md)
+ 	- [Writing a Discard Server 写个抛弃服务器](Getting Started/Writing a Discard Server.md)
  	- [Looking into the Received Data 查看收到的数据](Getting Started/Looking into the Received Data.md)
  	- [Writing an Echo Server 写个应答服务器](Getting Started/Writing an Echo Server.md)
  	- [Writing a Time Server 写个时间服务器](Getting Started/Writing a Time Server.md)
