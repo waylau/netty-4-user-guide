@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Universal Asynchronous I/O API 统一的异步 I/O API | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="1427374452560">
+    <div class="book"
+        data-level="3.2"
+        data-chapter-title="Universal Asynchronous I/O API 统一的异步 I/O API"
+        data-filepath="Architectural Overview/Universal Asynchronous IO API.md"
+        data-basepath=".."
+        data-revision="Thu Feb 04 2016 22:25:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> Preface 前言</span>
@@ -74,34 +90,32 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="Preface/The Problem.html">
             
                 
                     <a href="../Preface/The Problem.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         The Problem 问题
+                        The Problem 问题
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="Preface/The Solution.html">
             
                 
                     <a href="../Preface/The Solution.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         The Solution 解决
+                        The Solution 解决
                     </a>
-                
             
             
         </li>
@@ -111,180 +125,168 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" data-path="Getting Started/Getting Started.html">
             
                 
                     <a href="../Getting Started/Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
                         
-                         Getting Started 开始
+                        Getting Started 开始
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="Getting Started/Before Getting Started.html">
             
                 
                     <a href="../Getting Started/Before Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         Before Getting Started 开始之前
+                        Before Getting Started 开始之前
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.2" data-path="Getting Started/Writing a Discard Server.html">
             
                 
                     <a href="../Getting Started/Writing a Discard Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         Writing a Discard Server 写个丢弃服务器
+                        Writing a Discard Server 写个抛弃服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="Getting Started/Looking into the Received Data.html">
             
                 
                     <a href="../Getting Started/Looking into the Received Data.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         Looking into the Received Data 查看收到的数据
+                        Looking into the Received Data 查看收到的数据
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="Getting Started/Writing an Echo Server.html">
             
                 
                     <a href="../Getting Started/Writing an Echo Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         Writing an Echo Server 写个应答服务器
+                        Writing an Echo Server 写个应答服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="Getting Started/Writing a Time Server.html">
             
                 
                     <a href="../Getting Started/Writing a Time Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         Writing a Time Server 写个时间服务器
+                        Writing a Time Server 写个时间服务器
                     </a>
-                
             
             
-            <ul class="articles">
-                
+        </li>
     
-        
-        <li class="chapter " data-level="2.5.1" data-path="Getting Started/Writing a Time Client.html">
+        <li class="chapter " data-level="2.6" data-path="Getting Started/Writing a Time Client.html">
             
                 
                     <a href="../Getting Started/Writing a Time Client.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.1.</b>
+                            <b>2.6.</b>
                         
-                         Writing a Time Client 写个时间客户端
+                        Writing a Time Client 写个时间客户端
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.2" data-path="Getting Started/Dealing with a Stream based Transport.html">
+        <li class="chapter " data-level="2.7" data-path="Getting Started/Dealing with a Stream based Transport.html">
             
                 
                     <a href="../Getting Started/Dealing with a Stream based Transport.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.2.</b>
+                            <b>2.7.</b>
                         
-                         Dealing with a Stream-based Transport 处理一个基于流的传输
+                        Dealing with a Stream-based Transport 处理一个基于流的传输
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.3" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
+        <li class="chapter " data-level="2.8" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
             
                 
                     <a href="../Getting Started/Speaking in POJO instead of ByteBuf.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.3.</b>
+                            <b>2.8.</b>
                         
-                         Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                        Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.4" data-path="Getting Started/Shutting Down Your Application.html">
+        <li class="chapter " data-level="2.9" data-path="Getting Started/Shutting Down Your Application.html">
             
                 
                     <a href="../Getting Started/Shutting Down Your Application.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.4.</b>
+                            <b>2.9.</b>
                         
-                         Shutting Down Your Application 关闭你的应用
+                        Shutting Down Your Application 关闭你的应用
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.5" data-path="Getting Started/Summary.html">
+        <li class="chapter " data-level="2.10" data-path="Getting Started/Summary.html">
             
                 
                     <a href="../Getting Started/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.5.</b>
+                            <b>2.10.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -294,104 +296,93 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        
         <li class="chapter " data-level="3" data-path="Architectural Overview/Architectural Overview.html">
             
                 
                     <a href="../Architectural Overview/Architectural Overview.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                         Architectural Overview 架构总览
+                        Architectural Overview 架构总览
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1" data-path="Architectural Overview/Rich Buffer Data Structure.html">
             
                 
                     <a href="../Architectural Overview/Rich Buffer Data Structure.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         Rich Buffer Data Structure 丰富的缓冲实现
+                        Rich Buffer Data Structure 丰富的缓冲实现
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter active" data-level="3.2" data-path="Architectural Overview/Universal Asynchronous IO API.html">
             
                 
                     <a href="../Architectural Overview/Universal Asynchronous IO API.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
                         
-                         Universal Asynchronous I/O API 统一的异步 I/O API
+                        Universal Asynchronous I/O API 统一的异步 I/O API
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.3" data-path="Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
             
                 
                     <a href="../Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
+                        Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.4" data-path="Architectural Overview/Advanced Components for More Rapid Development.html">
             
                 
                     <a href="../Architectural Overview/Advanced Components for More Rapid Development.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.4.</b>
                         
-                         Advanced Components for More Rapid Development 适用快速开发的高级组件
+                        Advanced Components for More Rapid Development 适用快速开发的高级组件
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.5" data-path="Architectural Overview/Summary.html">
             
                 
                     <a href="../Architectural Overview/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.5.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -401,7 +392,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> Others 其他</span>
@@ -410,34 +400,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         Netty 实现聊天功能
+                        Netty 实现聊天功能
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-websocket-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-websocket-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         Netty 实现 WebSocket 聊天功能
+                        Netty 实现 WebSocket 聊天功能
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
                 
+                    <a target="_blank" href="http:/www.waylau.com/netty-time-out-and-heartbeat/">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Netty 超时机制及心跳程序实现
+                    </a>
             
             
         </li>
@@ -449,80 +452,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -532,26 +477,26 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_5">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="universal-asynchronous-io-api--io-api">Universal Asynchronous I/O API 统一的异步 I/O API</h1>
-<p>传统的 Java I/O API 在应对不同的传输协议时需要使用不同的类型和方法。例如：java.net.Socket 和 java.net.DatagramSocket 它们并不具有相同的超类型，因此，这就需要使用不同的调用方式执行 socket 操作。</p>
-<p>这种模式上的不匹配使得在更换一个网络应用的传输协议时变得繁杂和困难。由于（Java I/O API）缺乏协议间的移植性，当你试图在不修改网络传输层的前提下增加多种协议的支持，这时便会产生问题。并且理论上讲，多种应用层协议可运行在多种传输层协议之上例如TCP/IP,UDP/IP,SCTP和串口通信。</p>
-<p>让这种情况变得更糟的是，Java 新的 I/O（NIO）API与原有的阻塞式的I/O（OIO）API 并不兼容，NIO.2(AIO)也是如此。由于所有的API无论是在其设计上还是性能上的特性都与彼此不同，在进入开发阶段，你常常会被迫的选择一种你需要的API。</p>
-<p>例如，在用户数较小的时候你可能会选择使用传统的 OIO(Old I/O) API，毕竟与 NIO 相比使用 OIO 将更加容易一些。然而，当你的业务呈指数增长并且服务器需要同时处理成千上万的客户连接时你便会遇到问题。这种情况下你可能会尝试使用 NIO，但是复杂的 NIO Selector 编程接口又会耗费你大量时间并最终会阻碍你的快速开发。</p>
-<p>Netty 有一个叫做 <a href="http://netty.io/4.0/api/io/netty/channel/package-summary.html#package_description" target="_blank">Channel</a> 的统一的异步 I/O 编程接口，这个编程接口抽象了所有点对点的通信操作。也就是说，如果你的应用是基于 Netty 的某一种传输实现，那么同样的，你的应用也可以运行在 Netty 的另一种传输实现上。Netty 提供了几种拥有相同编程接口的基本传输实现：</p>
+                        <h1 id="universal-asynchronous-io-api-&#x7EDF;&#x4E00;&#x7684;&#x5F02;&#x6B65;-io-api">Universal Asynchronous I/O API &#x7EDF;&#x4E00;&#x7684;&#x5F02;&#x6B65; I/O API</h1>
+<p>&#x4F20;&#x7EDF;&#x7684; Java I/O API &#x5728;&#x5E94;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x65F6;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x4F8B;&#x5982;&#xFF1A;java.net.Socket &#x548C; java.net.DatagramSocket &#x5B83;&#x4EEC;&#x5E76;&#x4E0D;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x8D85;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x6267;&#x884C; socket &#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x4E0A;&#x7684;&#x4E0D;&#x5339;&#x914D;&#x4F7F;&#x5F97;&#x5728;&#x66F4;&#x6362;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x7684;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x65F6;&#x53D8;&#x5F97;&#x7E41;&#x6742;&#x548C;&#x56F0;&#x96BE;&#x3002;&#x7531;&#x4E8E;&#xFF08;Java I/O API&#xFF09;&#x7F3A;&#x4E4F;&#x534F;&#x8BAE;&#x95F4;&#x7684;&#x79FB;&#x690D;&#x6027;&#xFF0C;&#x5F53;&#x4F60;&#x8BD5;&#x56FE;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x5C42;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x589E;&#x52A0;&#x591A;&#x79CD;&#x534F;&#x8BAE;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x8FD9;&#x65F6;&#x4FBF;&#x4F1A;&#x4EA7;&#x751F;&#x95EE;&#x9898;&#x3002;&#x5E76;&#x4E14;&#x7406;&#x8BBA;&#x4E0A;&#x8BB2;&#xFF0C;&#x591A;&#x79CD;&#x5E94;&#x7528;&#x5C42;&#x534F;&#x8BAE;&#x53EF;&#x8FD0;&#x884C;&#x5728;&#x591A;&#x79CD;&#x4F20;&#x8F93;&#x5C42;&#x534F;&#x8BAE;&#x4E4B;&#x4E0A;&#x4F8B;&#x5982;TCP/IP,UDP/IP,SCTP&#x548C;&#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x3002;</p>
+<p>&#x8BA9;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x53D8;&#x5F97;&#x66F4;&#x7CDF;&#x7684;&#x662F;&#xFF0C;Java &#x65B0;&#x7684; I/O&#xFF08;NIO&#xFF09;API&#x4E0E;&#x539F;&#x6709;&#x7684;&#x963B;&#x585E;&#x5F0F;&#x7684;I/O&#xFF08;OIO&#xFF09;API &#x5E76;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;NIO.2(AIO)&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;&#x7531;&#x4E8E;&#x6240;&#x6709;&#x7684;API&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x5176;&#x8BBE;&#x8BA1;&#x4E0A;&#x8FD8;&#x662F;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x7279;&#x6027;&#x90FD;&#x4E0E;&#x5F7C;&#x6B64;&#x4E0D;&#x540C;&#xFF0C;&#x5728;&#x8FDB;&#x5165;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x5E38;&#x5E38;&#x4F1A;&#x88AB;&#x8FEB;&#x7684;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#x4F60;&#x9700;&#x8981;&#x7684;API&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x6570;&#x8F83;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x4F20;&#x7EDF;&#x7684; OIO(Old I/O) API&#xFF0C;&#x6BD5;&#x7ADF;&#x4E0E; NIO &#x76F8;&#x6BD4;&#x4F7F;&#x7528; OIO &#x5C06;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x4E00;&#x4E9B;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5F53;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x5448;&#x6307;&#x6570;&#x589E;&#x957F;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x540C;&#x65F6;&#x5904;&#x7406;&#x6210;&#x5343;&#x4E0A;&#x4E07;&#x7684;&#x5BA2;&#x6237;&#x8FDE;&#x63A5;&#x65F6;&#x4F60;&#x4FBF;&#x4F1A;&#x9047;&#x5230;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528; NIO&#xFF0C;&#x4F46;&#x662F;&#x590D;&#x6742;&#x7684; NIO Selector &#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x53C8;&#x4F1A;&#x8017;&#x8D39;&#x4F60;&#x5927;&#x91CF;&#x65F6;&#x95F4;&#x5E76;&#x6700;&#x7EC8;&#x4F1A;&#x963B;&#x788D;&#x4F60;&#x7684;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x3002;</p>
+<p>Netty &#x6709;&#x4E00;&#x4E2A;&#x53EB;&#x505A; <a href="http://netty.io/4.0/api/io/netty/channel/package-summary.html#package_description" target="_blank">Channel</a> &#x7684;&#x7EDF;&#x4E00;&#x7684;&#x5F02;&#x6B65; I/O &#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x62BD;&#x8C61;&#x4E86;&#x6240;&#x6709;&#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x901A;&#x4FE1;&#x64CD;&#x4F5C;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x662F;&#x57FA;&#x4E8E; Netty &#x7684;&#x67D0;&#x4E00;&#x79CD;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728; Netty &#x7684;&#x53E6;&#x4E00;&#x79CD;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#x4E0A;&#x3002;Netty &#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x79CD;&#x62E5;&#x6709;&#x76F8;&#x540C;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x7684;&#x57FA;&#x672C;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#xFF1A;</p>
 <ul>
-<li>基于 NIO 的 TCP/IP 传输 (见 io.netty.channel.nio),</li>
-<li>基于 OIO 的 TCP/IP 传输 (见 io.netty.channel.oio),</li>
-<li>基于 OIO 的 UDP/IP 传输, 和</li>
-<li>本地传输 (见 io.netty.channel.local).</li>
+<li>&#x57FA;&#x4E8E; NIO &#x7684; TCP/IP &#x4F20;&#x8F93; (&#x89C1; io.netty.channel.nio),</li>
+<li>&#x57FA;&#x4E8E; OIO &#x7684; TCP/IP &#x4F20;&#x8F93; (&#x89C1; io.netty.channel.oio),</li>
+<li>&#x57FA;&#x4E8E; OIO &#x7684; UDP/IP &#x4F20;&#x8F93;, &#x548C;</li>
+<li>&#x672C;&#x5730;&#x4F20;&#x8F93; (&#x89C1; io.netty.channel.local).</li>
 </ul>
-<p>切换不同的传输实现通常只需对代码进行几行的修改调整，例如选择一个不同的 <a href="http://netty.io/4.0/api/io/netty/bootstrap/ChannelFactory.html" target="_blank">ChannelFactory</a> 实现。</p>
-<p>此外，你甚至可以利用新的传输实现没有写入的优势，只需替换一些构造器的调用方法即可，例如串口通信。而且由于核心 API 具有高度的可扩展性，你还可以完成自己的传输实现。</p>
+<p>&#x5207;&#x6362;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#x901A;&#x5E38;&#x53EA;&#x9700;&#x5BF9;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x51E0;&#x884C;&#x7684;&#x4FEE;&#x6539;&#x8C03;&#x6574;&#xFF0C;&#x4F8B;&#x5982;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684; <a href="http://netty.io/4.0/api/io/netty/bootstrap/ChannelFactory.html" target="_blank">ChannelFactory</a> &#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x65B0;&#x7684;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#x6CA1;&#x6709;&#x5199;&#x5165;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x53EA;&#x9700;&#x66FF;&#x6362;&#x4E00;&#x4E9B;&#x6784;&#x9020;&#x5668;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#xFF0C;&#x4F8B;&#x5982;&#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x3002;&#x800C;&#x4E14;&#x7531;&#x4E8E;&#x6838;&#x5FC3; API &#x5177;&#x6709;&#x9AD8;&#x5EA6;&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x4F20;&#x8F93;&#x5B9E;&#x73B0;&#x3002;</p>
 
                     
                     </section>
@@ -574,16 +519,24 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

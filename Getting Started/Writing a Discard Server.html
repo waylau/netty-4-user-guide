@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Writing a Discard Server 写个丢弃服务器 | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Writing a Discard Server 写个抛弃服务器 | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1427374452560">
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="Writing a Discard Server 写个抛弃服务器"
+        data-filepath="Getting Started/Writing a Discard Server.md"
+        data-basepath=".."
+        data-revision="Thu Feb 04 2016 22:25:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> Preface 前言</span>
@@ -74,34 +90,32 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="Preface/The Problem.html">
             
                 
                     <a href="../Preface/The Problem.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         The Problem 问题
+                        The Problem 问题
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="Preface/The Solution.html">
             
                 
                     <a href="../Preface/The Solution.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         The Solution 解决
+                        The Solution 解决
                     </a>
-                
             
             
         </li>
@@ -111,180 +125,168 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" data-path="Getting Started/Getting Started.html">
             
                 
                     <a href="../Getting Started/Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
                         
-                         Getting Started 开始
+                        Getting Started 开始
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="Getting Started/Before Getting Started.html">
             
                 
                     <a href="../Getting Started/Before Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         Before Getting Started 开始之前
+                        Before Getting Started 开始之前
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter active" data-level="2.2" data-path="Getting Started/Writing a Discard Server.html">
             
                 
                     <a href="../Getting Started/Writing a Discard Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         Writing a Discard Server 写个丢弃服务器
+                        Writing a Discard Server 写个抛弃服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="Getting Started/Looking into the Received Data.html">
             
                 
                     <a href="../Getting Started/Looking into the Received Data.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         Looking into the Received Data 查看收到的数据
+                        Looking into the Received Data 查看收到的数据
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="Getting Started/Writing an Echo Server.html">
             
                 
                     <a href="../Getting Started/Writing an Echo Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         Writing an Echo Server 写个应答服务器
+                        Writing an Echo Server 写个应答服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="Getting Started/Writing a Time Server.html">
             
                 
                     <a href="../Getting Started/Writing a Time Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         Writing a Time Server 写个时间服务器
+                        Writing a Time Server 写个时间服务器
                     </a>
-                
             
             
-            <ul class="articles">
-                
+        </li>
     
-        
-        <li class="chapter " data-level="2.5.1" data-path="Getting Started/Writing a Time Client.html">
+        <li class="chapter " data-level="2.6" data-path="Getting Started/Writing a Time Client.html">
             
                 
                     <a href="../Getting Started/Writing a Time Client.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.1.</b>
+                            <b>2.6.</b>
                         
-                         Writing a Time Client 写个时间客户端
+                        Writing a Time Client 写个时间客户端
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.2" data-path="Getting Started/Dealing with a Stream based Transport.html">
+        <li class="chapter " data-level="2.7" data-path="Getting Started/Dealing with a Stream based Transport.html">
             
                 
                     <a href="../Getting Started/Dealing with a Stream based Transport.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.2.</b>
+                            <b>2.7.</b>
                         
-                         Dealing with a Stream-based Transport 处理一个基于流的传输
+                        Dealing with a Stream-based Transport 处理一个基于流的传输
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.3" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
+        <li class="chapter " data-level="2.8" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
             
                 
                     <a href="../Getting Started/Speaking in POJO instead of ByteBuf.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.3.</b>
+                            <b>2.8.</b>
                         
-                         Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                        Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.4" data-path="Getting Started/Shutting Down Your Application.html">
+        <li class="chapter " data-level="2.9" data-path="Getting Started/Shutting Down Your Application.html">
             
                 
                     <a href="../Getting Started/Shutting Down Your Application.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.4.</b>
+                            <b>2.9.</b>
                         
-                         Shutting Down Your Application 关闭你的应用
+                        Shutting Down Your Application 关闭你的应用
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.5" data-path="Getting Started/Summary.html">
+        <li class="chapter " data-level="2.10" data-path="Getting Started/Summary.html">
             
                 
                     <a href="../Getting Started/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.5.</b>
+                            <b>2.10.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -294,104 +296,93 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        
         <li class="chapter " data-level="3" data-path="Architectural Overview/Architectural Overview.html">
             
                 
                     <a href="../Architectural Overview/Architectural Overview.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                         Architectural Overview 架构总览
+                        Architectural Overview 架构总览
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1" data-path="Architectural Overview/Rich Buffer Data Structure.html">
             
                 
                     <a href="../Architectural Overview/Rich Buffer Data Structure.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         Rich Buffer Data Structure 丰富的缓冲实现
+                        Rich Buffer Data Structure 丰富的缓冲实现
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.2" data-path="Architectural Overview/Universal Asynchronous IO API.html">
             
                 
                     <a href="../Architectural Overview/Universal Asynchronous IO API.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
                         
-                         Universal Asynchronous I/O API 统一的异步 I/O API
+                        Universal Asynchronous I/O API 统一的异步 I/O API
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.3" data-path="Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
             
                 
                     <a href="../Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
+                        Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.4" data-path="Architectural Overview/Advanced Components for More Rapid Development.html">
             
                 
                     <a href="../Architectural Overview/Advanced Components for More Rapid Development.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.4.</b>
                         
-                         Advanced Components for More Rapid Development 适用快速开发的高级组件
+                        Advanced Components for More Rapid Development 适用快速开发的高级组件
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.5" data-path="Architectural Overview/Summary.html">
             
                 
                     <a href="../Architectural Overview/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.5.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -401,7 +392,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> Others 其他</span>
@@ -410,34 +400,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         Netty 实现聊天功能
+                        Netty 实现聊天功能
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-websocket-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-websocket-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         Netty 实现 WebSocket 聊天功能
+                        Netty 实现 WebSocket 聊天功能
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
                 
+                    <a target="_blank" href="http:/www.waylau.com/netty-time-out-and-heartbeat/">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Netty 超时机制及心跳程序实现
+                    </a>
             
             
         </li>
@@ -449,80 +452,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -532,41 +477,41 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_14">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="writing-a-discard-server-">Writing a Discard Server 写个丢弃服务器</h1>
-<p>世上最简单的协议不是&#39;Hello, World!&#39; 而是 <a href="http://tools.ietf.org/html/rfc863" target="_blank">DISCARD(丢弃)</a>。这个协议将会丢掉任何收到的数据，而不响应。</p>
-<p>为了实现 DISCARD 协议，你只需忽略所有收到的数据。让我们从 handler （处理器）的实现开始，handler 是由 Netty 生成用来处理 I/O 事件的。</p>
+                        <h1 id="writing-a-discard-server-&#x5199;&#x4E2A;&#x629B;&#x5F03;&#x670D;&#x52A1;&#x5668;">Writing a Discard Server &#x5199;&#x4E2A;&#x629B;&#x5F03;&#x670D;&#x52A1;&#x5668;</h1>
+<p>&#x4E16;&#x4E0A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x534F;&#x8BAE;&#x4E0D;&#x662F;&apos;Hello, World!&apos; &#x800C;&#x662F; <a href="http://tools.ietf.org/html/rfc863" target="_blank">DISCARD(&#x629B;&#x5F03;&#x670D;&#x52A1;)</a>&#x3002;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5C06;&#x4F1A;&#x629B;&#x5F03;&#x4EFB;&#x4F55;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0; DISCARD &#x534F;&#x8BAE;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x5FFD;&#x7565;&#x6240;&#x6709;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x4ECE; handler &#xFF08;&#x5904;&#x7406;&#x5668;&#xFF09;&#x7684;&#x5B9E;&#x73B0;&#x5F00;&#x59CB;&#xFF0C;handler &#x662F;&#x7531; Netty &#x751F;&#x6210;&#x7528;&#x6765;&#x5904;&#x7406; I/O &#x4E8B;&#x4EF6;&#x7684;&#x3002;</p>
 <pre><code> import io.netty.buffer.ByteBuf;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
- * 处理服务端 channel.
+ * &#x5904;&#x7406;&#x670D;&#x52A1;&#x7AEF; channel.
  */
 public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) { // (2)
-        // 默默地丢弃收到的数据
+        // &#x9ED8;&#x9ED8;&#x5730;&#x4E22;&#x5F03;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;
         ((ByteBuf) msg).release(); // (3)
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) { // (4)
-        // 当出现异常就关闭连接
+        // &#x5F53;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x5C31;&#x5173;&#x95ED;&#x8FDE;&#x63A5;
         cause.printStackTrace();
         ctx.close();
     }
 }
-</code></pre><p>1.DiscardServerHandler 继承自  <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandlerAdapter.html" target="_blank">ChannelInboundHandlerAdapter</a>，这个类实现了 <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandler.html" target="_blank">ChannelInboundHandler</a>接口，ChannelInboundHandler 提供了许多事件处理的接口方法，然后你可以覆盖这些方法。现在仅仅只需要继承 ChannelInboundHandlerAdapter 类而不是你自己去实现接口方法。</p>
-<p>2.这里我们覆盖了 chanelRead() 事件处理方法。每当从客户端收到新的数据时，这个方法会在收到消息时被调用，这个例子中，收到的消息的类型是 <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a></p>
-<p>3.为了实现 DISCARD 协议，处理器不得不忽略所有接受到的消息。ByteBuf 是一个引用计数对象，这个对象必须显示地调用 release() 方法来释放。请记住处理器的职责是释放所有传递到处理器的引用计数对象。通常，channelRead() 方法的实现就像下面的这段代码：</p>
+</code></pre><p>1.DiscardServerHandler &#x7EE7;&#x627F;&#x81EA;  <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandlerAdapter.html" target="_blank">ChannelInboundHandlerAdapter</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandler.html" target="_blank">ChannelInboundHandler</a>&#x63A5;&#x53E3;&#xFF0C;ChannelInboundHandler &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x73B0;&#x5728;&#x4EC5;&#x4EC5;&#x53EA;&#x9700;&#x8981;&#x7EE7;&#x627F; ChannelInboundHandlerAdapter &#x7C7B;&#x800C;&#x4E0D;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>2.&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x8986;&#x76D6;&#x4E86; chanelRead() &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x3002;&#x6BCF;&#x5F53;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x65B0;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6536;&#x5230;&#x6D88;&#x606F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x662F; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a></p>
+<p>3.&#x4E3A;&#x4E86;&#x5B9E;&#x73B0; DISCARD &#x534F;&#x8BAE;&#xFF0C;&#x5904;&#x7406;&#x5668;&#x4E0D;&#x5F97;&#x4E0D;&#x5FFD;&#x7565;&#x6240;&#x6709;&#x63A5;&#x53D7;&#x5230;&#x7684;&#x6D88;&#x606F;&#x3002;ByteBuf &#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x663E;&#x793A;&#x5730;&#x8C03;&#x7528; release() &#x65B9;&#x6CD5;&#x6765;&#x91CA;&#x653E;&#x3002;&#x8BF7;&#x8BB0;&#x4F4F;&#x5904;&#x7406;&#x5668;&#x7684;&#x804C;&#x8D23;&#x662F;&#x91CA;&#x653E;&#x6240;&#x6709;&#x4F20;&#x9012;&#x5230;&#x5904;&#x7406;&#x5668;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x901A;&#x5E38;&#xFF0C;channelRead() &#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code class="lang-java">
     <span class="hljs-annotation">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">channelRead</span><span class="hljs-params">(ChannelHandlerContext ctx, Object msg)</span> </span>{
@@ -577,8 +522,8 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
         }
     }
 </code></pre>
-<p>4.exceptionCaught() 事件处理方法是当出现 Throwable 对象才会被调用，即当 Netty 由于 IO 错误或者处理器在处理事件时抛出的异常时。在大部分情况下，捕获的异常应该被记录下来并且把关联的 channel 给关闭掉。然而这个方法的处理方式会在遇到不同异常的情况下有不同的实现，比如你可能想在关闭连接之前发送一个错误码的响应消息。</p>
-<p>目前为止一切都还不错，我们已经实现了 DISCARD 服务器的一半功能，剩下的需要编写一个 main() 方法来启动服务端的 DiscardServerHandler。</p>
+<p>4.exceptionCaught() &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x662F;&#x5F53;&#x51FA;&#x73B0; Throwable &#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5373;&#x5F53; Netty &#x7531;&#x4E8E; IO &#x9519;&#x8BEF;&#x6216;&#x8005;&#x5904;&#x7406;&#x5668;&#x5728;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x65F6;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x65F6;&#x3002;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x5E94;&#x8BE5;&#x88AB;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x5E76;&#x4E14;&#x628A;&#x5173;&#x8054;&#x7684; channel &#x7ED9;&#x5173;&#x95ED;&#x6389;&#x3002;&#x7136;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4F1A;&#x5728;&#x9047;&#x5230;&#x4E0D;&#x540C;&#x5F02;&#x5E38;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x5728;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x4E4B;&#x524D;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7801;&#x7684;&#x54CD;&#x5E94;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x4E00;&#x5207;&#x90FD;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86; DISCARD &#x670D;&#x52A1;&#x5668;&#x7684;&#x4E00;&#x534A;&#x529F;&#x80FD;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A; main() &#x65B9;&#x6CD5;&#x6765;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x7AEF;&#x7684; DiscardServerHandler&#x3002;</p>
 <pre><code>import io.netty.bootstrap.ServerBootstrap;
 
 import io.netty.channel.ChannelFuture;
@@ -590,7 +535,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * 丢弃任何进入的数据
+ * &#x4E22;&#x5F03;&#x4EFB;&#x4F55;&#x8FDB;&#x5165;&#x7684;&#x6570;&#x636E;
  */
 public class DiscardServer {
 
@@ -616,11 +561,11 @@ public class DiscardServer {
              .option(ChannelOption.SO_BACKLOG, 128)          // (5)
              .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
-            // 绑定端口，开始接收进来的连接
+            // &#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#xFF0C;&#x5F00;&#x59CB;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;
             ChannelFuture f = b.bind(port).sync(); // (7)
 
-            // 等待服务器  socket 关闭 。
-            // 在这个例子中，这不会发生，但你可以优雅地关闭你的服务器。
+            // &#x7B49;&#x5F85;&#x670D;&#x52A1;&#x5668;  socket &#x5173;&#x95ED; &#x3002;
+            // &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x4EE5;&#x4F18;&#x96C5;&#x5730;&#x5173;&#x95ED;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;
             f.channel().closeFuture().sync();
         } finally {
             workerGroup.shutdownGracefully();
@@ -638,14 +583,14 @@ public class DiscardServer {
         new DiscardServer(port).run();
     }
 }
-</code></pre><p>1.<a href="http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html" target="_blank">NioEventLoopGroup</a> 是用来处理I/O操作的多线程事件循环器，Netty 提供了许多不同的 <a href="http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html" target="_blank">EventLoopGroup</a> 的实现用来处理不同的传输。在这个例子中我们实现了一个服务端的应用，因此会有2个 NioEventLoopGroup 会被使用。第一个经常被叫做‘boss’，用来接收进来的连接。第二个经常被叫做‘worker’，用来处理已经被接收的连接，一旦‘boss’接收到连接，就会把连接信息注册到‘worker’上。如何知道多少个线程已经被使用，如何映射到已经创建的 <a href="http://netty.io/4.0/api/io/netty/channel/Channel.html" target="_blank">Channel</a>上都需要依赖于 EventLoopGroup 的实现，并且可以通过构造函数来配置他们的关系。</p>
-<p>2.<a href="http://netty.io/4.0/api/io/netty/bootstrap/ServerBootstrap.html" target="_blank">ServerBootstrap</a> 是一个启动 NIO 服务的辅助启动类。你可以在这个服务中直接使用 Channel，但是这会是一个复杂的处理过程，在很多情况下你并不需要这样做。</p>
-<p>3.这里我们指定使用 <a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> 类来举例说明一个新的 Channel 如何接收进来的连接。</p>
-<p>4.这里的事件处理类经常会被用来处理一个最近的已经接收的 Channel。<a href="http://netty.io/4.0/api/io/netty/channel/ChannelInitializer.html" target="_blank">ChannelInitializer</a> 是一个特殊的处理类，他的目的是帮助使用者配置一个新的 Channel。也许你想通过增加一些处理类比如DiscardServerHandler 来配置一个新的 Channel 或者其对应的<a href="http://netty.io/4.0/api/io/netty/channel/ChannelPipeline.html" target="_blank">ChannelPipeline</a> 来实现你的网络程序。当你的程序变的复杂时，可能你会增加更多的处理类到 pipline 上，然后提取这些匿名类到最顶层的类上。</p>
-<p>5.你可以设置这里指定的 Channel 实现的配置参数。我们正在写一个TCP/IP 的服务端，因此我们被允许设置 socket 的参数选项比如tcpNoDelay 和 keepAlive。请参考 <a href="http://netty.io/4.0/api/io/netty/channel/ChannelOption.html" target="_blank">ChannelOption</a> 和详细的 <a href="http://netty.io/4.0/api/io/netty/channel/ChannelConfig.html" target="_blank">ChannelConfig</a> 实现的接口文档以此可以对ChannelOption 的有一个大概的认识。</p>
-<p>6.你关注过 option() 和 childOption() 吗？option() 是提供给<a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> 用来接收进来的连接。childOption() 是提供给由父管道 <a href="http://netty.io/4.0/api/io/netty/channel/ServerChannel.html" target="_blank">ServerChannel</a> 接收到的连接，在这个例子中也是 NioServerSocketChannel。</p>
-<p>7.我们继续，剩下的就是绑定端口然后启动服务。这里我们在机器上绑定了机器所有网卡上的 8080 端口。当然现在你可以多次调用 bind() 方法(基于不同绑定地址)。</p>
-<p>恭喜！你已经熟练地完成了第一个基于 Netty 的服务端程序。</p>
+</code></pre><p>1.<a href="http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html" target="_blank">NioEventLoopGroup</a> &#x662F;&#x7528;&#x6765;&#x5904;&#x7406;I/O&#x64CD;&#x4F5C;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x5668;&#xFF0C;Netty &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html" target="_blank">EventLoopGroup</a> &#x7684;&#x5B9E;&#x73B0;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x8F93;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x6709;2&#x4E2A; NioEventLoopGroup &#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;boss&#x2019;&#xFF0C;&#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;worker&#x2019;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x5DF2;&#x7ECF;&#x88AB;&#x63A5;&#x6536;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x4E00;&#x65E6;&#x2018;boss&#x2019;&#x63A5;&#x6536;&#x5230;&#x8FDE;&#x63A5;&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#x6CE8;&#x518C;&#x5230;&#x2018;worker&#x2019;&#x4E0A;&#x3002;&#x5982;&#x4F55;&#x77E5;&#x9053;&#x591A;&#x5C11;&#x4E2A;&#x7EBF;&#x7A0B;&#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x4F55;&#x6620;&#x5C04;&#x5230;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/Channel.html" target="_blank">Channel</a>&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x4E8E; EventLoopGroup &#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x4ED6;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p>2.<a href="http://netty.io/4.0/api/io/netty/bootstrap/ServerBootstrap.html" target="_blank">ServerBootstrap</a> &#x662F;&#x4E00;&#x4E2A;&#x542F;&#x52A8; NIO &#x670D;&#x52A1;&#x7684;&#x8F85;&#x52A9;&#x542F;&#x52A8;&#x7C7B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Channel&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF0C;&#x5728;&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+<p>3.&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x4F7F;&#x7528; <a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7C7B;&#x6765;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x5982;&#x4F55;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>4.&#x8FD9;&#x91CC;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7C7B;&#x7ECF;&#x5E38;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x5DF2;&#x7ECF;&#x63A5;&#x6536;&#x7684; Channel&#x3002;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelInitializer.html" target="_blank">ChannelInitializer</a> &#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#xFF0C;&#x4ED6;&#x7684;&#x76EE;&#x7684;&#x662F;&#x5E2E;&#x52A9;&#x4F7F;&#x7528;&#x8005;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel&#x3002;&#x4E5F;&#x8BB8;&#x4F60;&#x60F3;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#x7C7B;&#x6BD4;&#x5982;DiscardServerHandler &#x6765;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x6216;&#x8005;&#x5176;&#x5BF9;&#x5E94;&#x7684;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelPipeline.html" target="_blank">ChannelPipeline</a> &#x6765;&#x5B9E;&#x73B0;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x7A0B;&#x5E8F;&#x3002;&#x5F53;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x53D8;&#x7684;&#x590D;&#x6742;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F60;&#x4F1A;&#x589E;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#x5230; pipline &#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x53D6;&#x8FD9;&#x4E9B;&#x533F;&#x540D;&#x7C7B;&#x5230;&#x6700;&#x9876;&#x5C42;&#x7684;&#x7C7B;&#x4E0A;&#x3002;</p>
+<p>5.&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x7684; Channel &#x5B9E;&#x73B0;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5199;&#x4E00;&#x4E2A;TCP/IP &#x7684;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x88AB;&#x5141;&#x8BB8;&#x8BBE;&#x7F6E; socket &#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x6BD4;&#x5982;tcpNoDelay &#x548C; keepAlive&#x3002;&#x8BF7;&#x53C2;&#x8003; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelOption.html" target="_blank">ChannelOption</a> &#x548C;&#x8BE6;&#x7EC6;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelConfig.html" target="_blank">ChannelConfig</a> &#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x4EE5;&#x6B64;&#x53EF;&#x4EE5;&#x5BF9;ChannelOption &#x7684;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x6982;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
+<p>6.&#x4F60;&#x5173;&#x6CE8;&#x8FC7; option() &#x548C; childOption() &#x5417;&#xFF1F;option() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;<a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;childOption() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;&#x7531;&#x7236;&#x7BA1;&#x9053; <a href="http://netty.io/4.0/api/io/netty/channel/ServerChannel.html" target="_blank">ServerChannel</a> &#x63A5;&#x6536;&#x5230;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x4E5F;&#x662F; NioServerSocketChannel&#x3002;</p>
+<p>7.&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#x7136;&#x540E;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5728;&#x673A;&#x5668;&#x4E0A;&#x7ED1;&#x5B9A;&#x4E86;&#x673A;&#x5668;&#x6240;&#x6709;&#x7F51;&#x5361;&#x4E0A;&#x7684; 8080 &#x7AEF;&#x53E3;&#x3002;&#x5F53;&#x7136;&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x8C03;&#x7528; bind() &#x65B9;&#x6CD5;(&#x57FA;&#x4E8E;&#x4E0D;&#x540C;&#x7ED1;&#x5B9A;&#x5730;&#x5740;)&#x3002;</p>
+<p>&#x606D;&#x559C;&#xFF01;&#x4F60;&#x5DF2;&#x7ECF;&#x719F;&#x7EC3;&#x5730;&#x5B8C;&#x6210;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Netty &#x7684;&#x670D;&#x52A1;&#x7AEF;&#x7A0B;&#x5E8F;&#x3002;</p>
 
                     
                     </section>
@@ -668,16 +613,24 @@ public class DiscardServer {
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

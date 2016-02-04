@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="2.5.3" data-basepath=".." data-revision="1427374452560">
+    <div class="book"
+        data-level="2.8"
+        data-chapter-title="Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf"
+        data-filepath="Getting Started/Speaking in POJO instead of ByteBuf.md"
+        data-basepath=".."
+        data-revision="Thu Feb 04 2016 22:25:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> Preface 前言</span>
@@ -74,34 +90,32 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="Preface/The Problem.html">
             
                 
                     <a href="../Preface/The Problem.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         The Problem 问题
+                        The Problem 问题
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="Preface/The Solution.html">
             
                 
                     <a href="../Preface/The Solution.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         The Solution 解决
+                        The Solution 解决
                     </a>
-                
             
             
         </li>
@@ -111,180 +125,168 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" data-path="Getting Started/Getting Started.html">
             
                 
                     <a href="../Getting Started/Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
                         
-                         Getting Started 开始
+                        Getting Started 开始
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="Getting Started/Before Getting Started.html">
             
                 
                     <a href="../Getting Started/Before Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         Before Getting Started 开始之前
+                        Before Getting Started 开始之前
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.2" data-path="Getting Started/Writing a Discard Server.html">
             
                 
                     <a href="../Getting Started/Writing a Discard Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         Writing a Discard Server 写个丢弃服务器
+                        Writing a Discard Server 写个抛弃服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="Getting Started/Looking into the Received Data.html">
             
                 
                     <a href="../Getting Started/Looking into the Received Data.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         Looking into the Received Data 查看收到的数据
+                        Looking into the Received Data 查看收到的数据
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="Getting Started/Writing an Echo Server.html">
             
                 
                     <a href="../Getting Started/Writing an Echo Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         Writing an Echo Server 写个应答服务器
+                        Writing an Echo Server 写个应答服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="Getting Started/Writing a Time Server.html">
             
                 
                     <a href="../Getting Started/Writing a Time Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         Writing a Time Server 写个时间服务器
+                        Writing a Time Server 写个时间服务器
                     </a>
-                
             
             
-            <ul class="articles">
-                
+        </li>
     
-        
-        <li class="chapter " data-level="2.5.1" data-path="Getting Started/Writing a Time Client.html">
+        <li class="chapter " data-level="2.6" data-path="Getting Started/Writing a Time Client.html">
             
                 
                     <a href="../Getting Started/Writing a Time Client.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.1.</b>
+                            <b>2.6.</b>
                         
-                         Writing a Time Client 写个时间客户端
+                        Writing a Time Client 写个时间客户端
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.2" data-path="Getting Started/Dealing with a Stream based Transport.html">
+        <li class="chapter " data-level="2.7" data-path="Getting Started/Dealing with a Stream based Transport.html">
             
                 
                     <a href="../Getting Started/Dealing with a Stream based Transport.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.2.</b>
+                            <b>2.7.</b>
                         
-                         Dealing with a Stream-based Transport 处理一个基于流的传输
+                        Dealing with a Stream-based Transport 处理一个基于流的传输
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter active" data-level="2.5.3" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
+        <li class="chapter active" data-level="2.8" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
             
                 
                     <a href="../Getting Started/Speaking in POJO instead of ByteBuf.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.3.</b>
+                            <b>2.8.</b>
                         
-                         Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                        Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.4" data-path="Getting Started/Shutting Down Your Application.html">
+        <li class="chapter " data-level="2.9" data-path="Getting Started/Shutting Down Your Application.html">
             
                 
                     <a href="../Getting Started/Shutting Down Your Application.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.4.</b>
+                            <b>2.9.</b>
                         
-                         Shutting Down Your Application 关闭你的应用
+                        Shutting Down Your Application 关闭你的应用
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.5" data-path="Getting Started/Summary.html">
+        <li class="chapter " data-level="2.10" data-path="Getting Started/Summary.html">
             
                 
                     <a href="../Getting Started/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.5.</b>
+                            <b>2.10.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -294,104 +296,93 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        
         <li class="chapter " data-level="3" data-path="Architectural Overview/Architectural Overview.html">
             
                 
                     <a href="../Architectural Overview/Architectural Overview.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                         Architectural Overview 架构总览
+                        Architectural Overview 架构总览
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1" data-path="Architectural Overview/Rich Buffer Data Structure.html">
             
                 
                     <a href="../Architectural Overview/Rich Buffer Data Structure.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         Rich Buffer Data Structure 丰富的缓冲实现
+                        Rich Buffer Data Structure 丰富的缓冲实现
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.2" data-path="Architectural Overview/Universal Asynchronous IO API.html">
             
                 
                     <a href="../Architectural Overview/Universal Asynchronous IO API.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
                         
-                         Universal Asynchronous I/O API 统一的异步 I/O API
+                        Universal Asynchronous I/O API 统一的异步 I/O API
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.3" data-path="Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
             
                 
                     <a href="../Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
+                        Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.4" data-path="Architectural Overview/Advanced Components for More Rapid Development.html">
             
                 
                     <a href="../Architectural Overview/Advanced Components for More Rapid Development.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.4.</b>
                         
-                         Advanced Components for More Rapid Development 适用快速开发的高级组件
+                        Advanced Components for More Rapid Development 适用快速开发的高级组件
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.5" data-path="Architectural Overview/Summary.html">
             
                 
                     <a href="../Architectural Overview/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.5.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -401,7 +392,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> Others 其他</span>
@@ -410,34 +400,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         Netty 实现聊天功能
+                        Netty 实现聊天功能
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-websocket-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-websocket-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         Netty 实现 WebSocket 聊天功能
+                        Netty 实现 WebSocket 聊天功能
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
                 
+                    <a target="_blank" href="http:/www.waylau.com/netty-time-out-and-heartbeat/">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Netty 超时机制及心跳程序实现
+                    </a>
             
             
         </li>
@@ -449,80 +452,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -532,16 +477,16 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="speaking-in-pojo-instead-of-bytebuf-pojobytebuf">Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf</h1>
-<p>我们回顾了迄今为止的所有例子使用 <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a> 作为协议消息的主要数据结构。在本节中,我们将改善的 TIME 协议客户端和服务器例子，使用 POJO 代替 ByteBuf。</p>
-<p>在 <a href="http://netty.io/4.0/api/io/netty/channel/ChannelHandler.html" target="_blank">ChannelHandler</a> 使用 POIO 的好处很明显：通过从ChannelHandler 中提取出 ByteBuf 的代码，将会使 ChannelHandler的实现变得更加可维护和可重用。在 TIME 客户端和服务器的例子中，我们读取的仅仅是一个32位的整形数据，直接使用 ByteBuf 不会是一个主要的问题。然而，你会发现当你需要实现一个真实的协议，分离代码变得非常的必要。</p>
-<p>首先，让我们定义一个新的类型叫做 UnixTime。</p>
+                        <h1 id="speaking-in-pojo-instead-of-bytebuf-&#x7528;pojo&#x4EE3;&#x66FF;bytebuf">Speaking in POJO instead of ByteBuf &#x7528;POJO&#x4EE3;&#x66FF;ByteBuf</h1>
+<p>&#x6211;&#x4EEC;&#x56DE;&#x987E;&#x4E86;&#x8FC4;&#x4ECA;&#x4E3A;&#x6B62;&#x7684;&#x6240;&#x6709;&#x4F8B;&#x5B50;&#x4F7F;&#x7528; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a> &#x4F5C;&#x4E3A;&#x534F;&#x8BAE;&#x6D88;&#x606F;&#x7684;&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x5728;&#x672C;&#x8282;&#x4E2D;,&#x6211;&#x4EEC;&#x5C06;&#x6539;&#x5584;&#x7684; TIME &#x534F;&#x8BAE;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4F8B;&#x5B50;&#xFF0C;&#x4F7F;&#x7528; POJO &#x4EE3;&#x66FF; ByteBuf&#x3002;</p>
+<p>&#x5728; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelHandler.html" target="_blank">ChannelHandler</a> &#x4F7F;&#x7528; POIO &#x7684;&#x597D;&#x5904;&#x5F88;&#x660E;&#x663E;&#xFF1A;&#x901A;&#x8FC7;&#x4ECE;ChannelHandler &#x4E2D;&#x63D0;&#x53D6;&#x51FA; ByteBuf &#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F; ChannelHandler&#x7684;&#x5B9E;&#x73B0;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x53EF;&#x7EF4;&#x62A4;&#x548C;&#x53EF;&#x91CD;&#x7528;&#x3002;&#x5728; TIME &#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BFB;&#x53D6;&#x7684;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;32&#x4F4D;&#x7684;&#x6574;&#x5F62;&#x6570;&#x636E;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528; ByteBuf &#x4E0D;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x95EE;&#x9898;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x771F;&#x5B9E;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7684;&#x5FC5;&#x8981;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7C7B;&#x578B;&#x53EB;&#x505A; UnixTime&#x3002;</p>
 <pre><code>public class UnixTime {
 
     private final long value;
@@ -563,7 +508,7 @@
         return new Date((value() - 2208988800L) * 1000L).toString();
     }
 }
-</code></pre><p>现在我们可以修改下 TimeDecoder 类，返回一个 UnixTime，以替代ByteBuf</p>
+</code></pre><p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x4E0B; TimeDecoder &#x7C7B;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; UnixTime&#xFF0C;&#x4EE5;&#x66FF;&#x4EE3;ByteBuf</p>
 <pre><code>@Override
 protected void decode(ChannelHandlerContext ctx, ByteBuf in, List&lt;Object&gt; out) {
     if (in.readableBytes() &lt; 4) {
@@ -572,20 +517,20 @@ protected void decode(ChannelHandlerContext ctx, ByteBuf in, List&lt;Object&gt; 
 
     out.add(new UnixTime(in.readUnsignedInt()));
 }
-</code></pre><p>下面是修改后的解码器，TimeClientHandler 不再任何的 ByteBuf 代码了。</p>
+</code></pre><p>&#x4E0B;&#x9762;&#x662F;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x89E3;&#x7801;&#x5668;&#xFF0C;TimeClientHandler &#x4E0D;&#x518D;&#x4EFB;&#x4F55;&#x7684; ByteBuf &#x4EE3;&#x7801;&#x4E86;&#x3002;</p>
 <pre><code>@Override
 public void channelRead(ChannelHandlerContext ctx, Object msg) {
     UnixTime m = (UnixTime) msg;
     System.out.println(m);
     ctx.close();
 }
-</code></pre><p>是不是变得更加简单和优雅了？相同的技术可以被运用到服务端。让我们修改一下 TimeServerHandler 的代码。</p>
+</code></pre><p>&#x662F;&#x4E0D;&#x662F;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x548C;&#x4F18;&#x96C5;&#x4E86;&#xFF1F;&#x76F8;&#x540C;&#x7684;&#x6280;&#x672F;&#x53EF;&#x4EE5;&#x88AB;&#x8FD0;&#x7528;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x4E00;&#x4E0B; TimeServerHandler &#x7684;&#x4EE3;&#x7801;&#x3002;</p>
 <pre><code>@Override
 public void channelActive(ChannelHandlerContext ctx) {
     ChannelFuture f = ctx.writeAndFlush(new UnixTime());
     f.addListener(ChannelFutureListener.CLOSE);
 }
-</code></pre><p>现在,唯一缺少的功能是一个编码器,是<a href="http://netty.io/4.0/api/io/netty/channel/ChannelOutboundHandler.html" target="_blank">ChannelOutboundHandler</a>的实现，用来将 UnixTime 对象重新转化为一个 ByteBuf。这是比编写一个解码器简单得多,因为没有需要处理的数据包编码消息时拆分和组装。</p>
+</code></pre><p>&#x73B0;&#x5728;,&#x552F;&#x4E00;&#x7F3A;&#x5C11;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x5668;,&#x662F;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelOutboundHandler.html" target="_blank">ChannelOutboundHandler</a>&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x7528;&#x6765;&#x5C06; UnixTime &#x5BF9;&#x8C61;&#x91CD;&#x65B0;&#x8F6C;&#x5316;&#x4E3A;&#x4E00;&#x4E2A; ByteBuf&#x3002;&#x8FD9;&#x662F;&#x6BD4;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x89E3;&#x7801;&#x5668;&#x7B80;&#x5355;&#x5F97;&#x591A;,&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x5305;&#x7F16;&#x7801;&#x6D88;&#x606F;&#x65F6;&#x62C6;&#x5206;&#x548C;&#x7EC4;&#x88C5;&#x3002;</p>
 <pre><code>public class TimeEncoder extends ChannelOutboundHandlerAdapter {
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) {
@@ -595,15 +540,15 @@ public void channelActive(ChannelHandlerContext ctx) {
         ctx.write(encoded, promise); // (1)
     }
 }
-</code></pre><p>1.在这几行代码里还有几个重要的事情。第一，通过 <a href="http://netty.io/4.0/api/io/netty/channel/ChannelPromise.html" target="_blank">ChannelPromise</a>，当编码后的数据被写到了通道上 Netty 可以通过这个对象标记是成功还是失败。第二， 我们不需要调用 cxt.flush()。因为处理器已经单独分离出了一个方法 void flush(ChannelHandlerContext cxt),如果像自己实现 flush() 方法内容可以自行覆盖这个方法。</p>
-<p>进一步简化操作，你可以使用 <a href="http://netty.io/4.0/api/io/netty/handler/codec/MessageToByteEncoder.html" target="_blank">MessageToByteEncode</a>:</p>
+</code></pre><p>1.&#x5728;&#x8FD9;&#x51E0;&#x884C;&#x4EE3;&#x7801;&#x91CC;&#x8FD8;&#x6709;&#x51E0;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x7B2C;&#x4E00;&#xFF0C;&#x901A;&#x8FC7; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelPromise.html" target="_blank">ChannelPromise</a>&#xFF0C;&#x5F53;&#x7F16;&#x7801;&#x540E;&#x7684;&#x6570;&#x636E;&#x88AB;&#x5199;&#x5230;&#x4E86;&#x901A;&#x9053;&#x4E0A; Netty &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x6807;&#x8BB0;&#x662F;&#x6210;&#x529F;&#x8FD8;&#x662F;&#x5931;&#x8D25;&#x3002;&#x7B2C;&#x4E8C;&#xFF0C; &#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x8C03;&#x7528; cxt.flush()&#x3002;&#x56E0;&#x4E3A;&#x5904;&#x7406;&#x5668;&#x5DF2;&#x7ECF;&#x5355;&#x72EC;&#x5206;&#x79BB;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5; void flush(ChannelHandlerContext cxt),&#x5982;&#x679C;&#x50CF;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0; flush() &#x65B9;&#x6CD5;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8FDB;&#x4E00;&#x6B65;&#x7B80;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="http://netty.io/4.0/api/io/netty/handler/codec/MessageToByteEncoder.html" target="_blank">MessageToByteEncode</a>:</p>
 <pre><code>public class TimeEncoder extends MessageToByteEncoder&lt;UnixTime&gt; {
     @Override
     protected void encode(ChannelHandlerContext ctx, UnixTime msg, ByteBuf out) {
         out.writeInt((int)msg.value());
     }
 }
-</code></pre><p>最后的任务就是在 TimeServerHandler 之前把 TimeEncoder 插入到ChannelPipeline。 但这是不那么重要的工作。</p>
+</code></pre><p>&#x6700;&#x540E;&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x662F;&#x5728; TimeServerHandler &#x4E4B;&#x524D;&#x628A; TimeEncoder &#x63D2;&#x5165;&#x5230;ChannelPipeline&#x3002; &#x4F46;&#x8FD9;&#x662F;&#x4E0D;&#x90A3;&#x4E48;&#x91CD;&#x8981;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
 
                     
                     </section>
@@ -626,16 +571,24 @@ public void channelActive(ChannelHandlerContext ctx) {
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

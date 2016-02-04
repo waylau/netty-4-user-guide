@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Rich Buffer Data Structure 丰富的缓冲实现 | Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="1427374452560">
+    <div class="book"
+        data-level="3.1"
+        data-chapter-title="Rich Buffer Data Structure 丰富的缓冲实现"
+        data-filepath="Architectural Overview/Rich Buffer Data Structure.md"
+        data-basepath=".."
+        data-revision="Thu Feb 04 2016 22:25:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> Preface 前言</span>
@@ -74,34 +90,32 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="Preface/The Problem.html">
             
                 
                     <a href="../Preface/The Problem.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         The Problem 问题
+                        The Problem 问题
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="Preface/The Solution.html">
             
                 
                     <a href="../Preface/The Solution.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         The Solution 解决
+                        The Solution 解决
                     </a>
-                
             
             
         </li>
@@ -111,180 +125,168 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" data-path="Getting Started/Getting Started.html">
             
                 
                     <a href="../Getting Started/Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
                         
-                         Getting Started 开始
+                        Getting Started 开始
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="Getting Started/Before Getting Started.html">
             
                 
                     <a href="../Getting Started/Before Getting Started.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         Before Getting Started 开始之前
+                        Before Getting Started 开始之前
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.2" data-path="Getting Started/Writing a Discard Server.html">
             
                 
                     <a href="../Getting Started/Writing a Discard Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         Writing a Discard Server 写个丢弃服务器
+                        Writing a Discard Server 写个抛弃服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="Getting Started/Looking into the Received Data.html">
             
                 
                     <a href="../Getting Started/Looking into the Received Data.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         Looking into the Received Data 查看收到的数据
+                        Looking into the Received Data 查看收到的数据
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="Getting Started/Writing an Echo Server.html">
             
                 
                     <a href="../Getting Started/Writing an Echo Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         Writing an Echo Server 写个应答服务器
+                        Writing an Echo Server 写个应答服务器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="Getting Started/Writing a Time Server.html">
             
                 
                     <a href="../Getting Started/Writing a Time Server.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         Writing a Time Server 写个时间服务器
+                        Writing a Time Server 写个时间服务器
                     </a>
-                
             
             
-            <ul class="articles">
-                
+        </li>
     
-        
-        <li class="chapter " data-level="2.5.1" data-path="Getting Started/Writing a Time Client.html">
+        <li class="chapter " data-level="2.6" data-path="Getting Started/Writing a Time Client.html">
             
                 
                     <a href="../Getting Started/Writing a Time Client.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.1.</b>
+                            <b>2.6.</b>
                         
-                         Writing a Time Client 写个时间客户端
+                        Writing a Time Client 写个时间客户端
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.2" data-path="Getting Started/Dealing with a Stream based Transport.html">
+        <li class="chapter " data-level="2.7" data-path="Getting Started/Dealing with a Stream based Transport.html">
             
                 
                     <a href="../Getting Started/Dealing with a Stream based Transport.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.2.</b>
+                            <b>2.7.</b>
                         
-                         Dealing with a Stream-based Transport 处理一个基于流的传输
+                        Dealing with a Stream-based Transport 处理一个基于流的传输
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.3" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
+        <li class="chapter " data-level="2.8" data-path="Getting Started/Speaking in POJO instead of ByteBuf.html">
             
                 
                     <a href="../Getting Started/Speaking in POJO instead of ByteBuf.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.3.</b>
+                            <b>2.8.</b>
                         
-                         Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                        Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.4" data-path="Getting Started/Shutting Down Your Application.html">
+        <li class="chapter " data-level="2.9" data-path="Getting Started/Shutting Down Your Application.html">
             
                 
                     <a href="../Getting Started/Shutting Down Your Application.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.4.</b>
+                            <b>2.9.</b>
                         
-                         Shutting Down Your Application 关闭你的应用
+                        Shutting Down Your Application 关闭你的应用
                     </a>
-                
             
             
         </li>
     
-        
-        <li class="chapter " data-level="2.5.5" data-path="Getting Started/Summary.html">
+        <li class="chapter " data-level="2.10" data-path="Getting Started/Summary.html">
             
                 
                     <a href="../Getting Started/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.5.</b>
+                            <b>2.10.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -294,104 +296,93 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        
         <li class="chapter " data-level="3" data-path="Architectural Overview/Architectural Overview.html">
             
                 
                     <a href="../Architectural Overview/Architectural Overview.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                         Architectural Overview 架构总览
+                        Architectural Overview 架构总览
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter active" data-level="3.1" data-path="Architectural Overview/Rich Buffer Data Structure.html">
             
                 
                     <a href="../Architectural Overview/Rich Buffer Data Structure.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         Rich Buffer Data Structure 丰富的缓冲实现
+                        Rich Buffer Data Structure 丰富的缓冲实现
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.2" data-path="Architectural Overview/Universal Asynchronous IO API.html">
             
                 
                     <a href="../Architectural Overview/Universal Asynchronous IO API.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
                         
-                         Universal Asynchronous I/O API 统一的异步 I/O API
+                        Universal Asynchronous I/O API 统一的异步 I/O API
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.3" data-path="Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
             
                 
                     <a href="../Architectural Overview/Event Model based on the Interceptor Chain Pattern.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
+                        Event Model based on the Interceptor Chain Pattern 基于拦截链模式的事件模型
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.4" data-path="Architectural Overview/Advanced Components for More Rapid Development.html">
             
                 
                     <a href="../Architectural Overview/Advanced Components for More Rapid Development.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.4.</b>
                         
-                         Advanced Components for More Rapid Development 适用快速开发的高级组件
+                        Advanced Components for More Rapid Development 适用快速开发的高级组件
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.5" data-path="Architectural Overview/Summary.html">
             
                 
                     <a href="../Architectural Overview/Summary.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.5.</b>
                         
-                         Summary 总结
+                        Summary 总结
                     </a>
-                
             
             
         </li>
@@ -401,7 +392,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> Others 其他</span>
@@ -410,34 +400,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         Netty 实现聊天功能
+                        Netty 实现聊天功能
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" >
             
                 
-                    <a target="_blank" href="http://www.waylau.com/netty-websocket-chat/">
+                    <a target="_blank" href="http:/www.waylau.com/netty-websocket-chat/">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         Netty 实现 WebSocket 聊天功能
+                        Netty 实现 WebSocket 聊天功能
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
                 
+                    <a target="_blank" href="http:/www.waylau.com/netty-time-out-and-heartbeat/">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Netty 超时机制及心跳程序实现
+                    </a>
             
             
         </li>
@@ -449,80 +452,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -532,64 +477,64 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="rich-buffer-data-structure-">Rich Buffer Data Structure 丰富的缓冲实现</h1>
-<p>Netty 使用自建的 buffer API，而不是使用 NIO 的 <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html?is-external=true" target="_blank">ByteBuffer</a> 来表示一个连续的字节序列。与 ByteBuffer 相比这种方式拥有明显的优势。Netty 使用新的 buffer 类型 <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a>，被设计为一个可从底层解决 ByteBuffer 问题，并可满足日常网络应用开发需要的缓冲类型。这些很酷的特性包括：</p>
+                        <h1 id="rich-buffer-data-structure-&#x4E30;&#x5BCC;&#x7684;&#x7F13;&#x51B2;&#x5B9E;&#x73B0;">Rich Buffer Data Structure &#x4E30;&#x5BCC;&#x7684;&#x7F13;&#x51B2;&#x5B9E;&#x73B0;</h1>
+<p>Netty &#x4F7F;&#x7528;&#x81EA;&#x5EFA;&#x7684; buffer API&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; NIO &#x7684; <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html?is-external=true" target="_blank">ByteBuffer</a> &#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x8FDE;&#x7EED;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x3002;&#x4E0E; ByteBuffer &#x76F8;&#x6BD4;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x62E5;&#x6709;&#x660E;&#x663E;&#x7684;&#x4F18;&#x52BF;&#x3002;Netty &#x4F7F;&#x7528;&#x65B0;&#x7684; buffer &#x7C7B;&#x578B; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a>&#xFF0C;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x4E00;&#x4E2A;&#x53EF;&#x4ECE;&#x5E95;&#x5C42;&#x89E3;&#x51B3; ByteBuffer &#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x53EF;&#x6EE1;&#x8DB3;&#x65E5;&#x5E38;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x7684;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E9B;&#x5F88;&#x9177;&#x7684;&#x7279;&#x6027;&#x5305;&#x62EC;&#xFF1A;</p>
 <ul>
-<li>如果需要，允许使用自定义的缓冲类型。</li>
-<li>复合缓冲类型中内置的透明的零拷贝实现。</li>
-<li>开箱即用的动态缓冲类型，具有像 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html?is-external=true" target="_blank">StringBuffer</a> 一样的动态缓冲能力。</li>
-<li>不再需要调用的flip()方法。</li>
-<li>正常情况下具有比 ByteBuffer 更快的响应速度。</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x590D;&#x5408;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#x4E2D;&#x5185;&#x7F6E;&#x7684;&#x900F;&#x660E;&#x7684;&#x96F6;&#x62F7;&#x8D1D;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684;&#x52A8;&#x6001;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#xFF0C;&#x5177;&#x6709;&#x50CF; <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html?is-external=true" target="_blank">StringBuffer</a> &#x4E00;&#x6837;&#x7684;&#x52A8;&#x6001;&#x7F13;&#x51B2;&#x80FD;&#x529B;&#x3002;</li>
+<li>&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;flip()&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5177;&#x6709;&#x6BD4; ByteBuffer &#x66F4;&#x5FEB;&#x7684;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x3002;</li>
 </ul>
-<p>更多信息请参考：<a href="http://netty.io/4.0/api/io/netty/buffer/package-summary.html#package_description" target="_blank">io.netty.buffer 包描述</a></p>
-<h3 id="extensibility-">Extensibility 可扩展性</h3>
-<p>ByteBuf 具有丰富的操作集,可以快速的实现协议的优化。例如，ByteBuf 提供各种操作用于访问无符号值和字符串，以及在缓冲区搜索一定的字节序列。你也可以扩展或包装现有的缓冲类型用来提供方便的访问。自定义缓冲式仍然实现自 ByteBuf 接口，而不是引入一个不兼容的类型</p>
-<h3 id="transparent-zero-copy-">Transparent Zero Copy 透明的零拷贝</h3>
-<p>举一个网络应用到极致的表现，你需要减少内存拷贝操作次数。你可能有一组缓冲区可以被组合以形成一个完整的消息。网络提供了一种复合缓冲，允许你从现有的任意数的缓冲区创建一个新的缓冲区而无需没有内存拷贝。例如，一个信息可以由两部分组成；header 和 body。在一个模块化的应用，当消息发送出去时，这两部分可以由不同的模块生产和装配。</p>
+<p>&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003;&#xFF1A;<a href="http://netty.io/4.0/api/io/netty/buffer/package-summary.html#package_description" target="_blank">io.netty.buffer &#x5305;&#x63CF;&#x8FF0;</a></p>
+<h3 id="extensibility-&#x53EF;&#x6269;&#x5C55;&#x6027;">Extensibility &#x53EF;&#x6269;&#x5C55;&#x6027;</h3>
+<p>ByteBuf &#x5177;&#x6709;&#x4E30;&#x5BCC;&#x7684;&#x64CD;&#x4F5C;&#x96C6;,&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x5B9E;&#x73B0;&#x534F;&#x8BAE;&#x7684;&#x4F18;&#x5316;&#x3002;&#x4F8B;&#x5982;&#xFF0C;ByteBuf &#x63D0;&#x4F9B;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x65E0;&#x7B26;&#x53F7;&#x503C;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4EE5;&#x53CA;&#x5728;&#x7F13;&#x51B2;&#x533A;&#x641C;&#x7D22;&#x4E00;&#x5B9A;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x6269;&#x5C55;&#x6216;&#x5305;&#x88C5;&#x73B0;&#x6709;&#x7684;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#x7528;&#x6765;&#x63D0;&#x4F9B;&#x65B9;&#x4FBF;&#x7684;&#x8BBF;&#x95EE;&#x3002;&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x51B2;&#x5F0F;&#x4ECD;&#x7136;&#x5B9E;&#x73B0;&#x81EA; ByteBuf &#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x7C7B;&#x578B;</p>
+<h3 id="transparent-zero-copy-&#x900F;&#x660E;&#x7684;&#x96F6;&#x62F7;&#x8D1D;">Transparent Zero Copy &#x900F;&#x660E;&#x7684;&#x96F6;&#x62F7;&#x8D1D;</h3>
+<p>&#x4E3E;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x5230;&#x6781;&#x81F4;&#x7684;&#x8868;&#x73B0;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x6B21;&#x6570;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x7EC4;&#x7F13;&#x51B2;&#x533A;&#x53EF;&#x4EE5;&#x88AB;&#x7EC4;&#x5408;&#x4EE5;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6D88;&#x606F;&#x3002;&#x7F51;&#x7EDC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x590D;&#x5408;&#x7F13;&#x51B2;&#xFF0C;&#x5141;&#x8BB8;&#x4F60;&#x4ECE;&#x73B0;&#x6709;&#x7684;&#x4EFB;&#x610F;&#x6570;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x800C;&#x65E0;&#x9700;&#x6CA1;&#x6709;&#x5185;&#x5B58;&#x62F7;&#x8D1D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x7531;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1B;header &#x548C; body&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5316;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5F53;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x65F6;&#xFF0C;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x7531;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x5757;&#x751F;&#x4EA7;&#x548C;&#x88C5;&#x914D;&#x3002;</p>
 <pre> +--------+----------+
  | header |   body   |
  +--------+----------+
  </pre>
 
-<p>如果你使用的是 ByteBuffer ，你必须要创建一个新的大缓存区用来拷贝这两部分到这个新缓存区中。或者，你可以在 NiO做一个收集写操作，但限制你将复合缓冲类型作为 ByteBuffer 的数组而不是一个单一的缓冲区，打破了抽象，并且引入了复杂的状态管理。此外，如果你不从 NIO channel 读或写，它是没有用的。</p>
-<pre><code>// 复合类型与组件类型不兼容。
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F; ByteBuffer &#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5927;&#x7F13;&#x5B58;&#x533A;&#x7528;&#x6765;&#x62F7;&#x8D1D;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#x5230;&#x8FD9;&#x4E2A;&#x65B0;&#x7F13;&#x5B58;&#x533A;&#x4E2D;&#x3002;&#x6216;&#x8005;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728; NiO&#x505A;&#x4E00;&#x4E2A;&#x6536;&#x96C6;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x9650;&#x5236;&#x4F60;&#x5C06;&#x590D;&#x5408;&#x7F13;&#x51B2;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A; ByteBuffer &#x7684;&#x6570;&#x7EC4;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x6253;&#x7834;&#x4E86;&#x62BD;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x5F15;&#x5165;&#x4E86;&#x590D;&#x6742;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x4ECE; NIO channel &#x8BFB;&#x6216;&#x5199;&#xFF0C;&#x5B83;&#x662F;&#x6CA1;&#x6709;&#x7528;&#x7684;&#x3002;</p>
+<pre><code>// &#x590D;&#x5408;&#x7C7B;&#x578B;&#x4E0E;&#x7EC4;&#x4EF6;&#x7C7B;&#x578B;&#x4E0D;&#x517C;&#x5BB9;&#x3002;
 ByteBuffer[] message = new ByteBuffer[] { header, body };
-</code></pre><p>通过对比， ByteBuf 不会有警告，因为它是完全可扩展并有一个内置的复合缓冲区。</p>
-<pre><code>// 复合类型与组件类型是兼容的。
+</code></pre><p>&#x901A;&#x8FC7;&#x5BF9;&#x6BD4;&#xFF0C; ByteBuf &#x4E0D;&#x4F1A;&#x6709;&#x8B66;&#x544A;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x5B8C;&#x5168;&#x53EF;&#x6269;&#x5C55;&#x5E76;&#x6709;&#x4E00;&#x4E2A;&#x5185;&#x7F6E;&#x7684;&#x590D;&#x5408;&#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<pre><code>// &#x590D;&#x5408;&#x7C7B;&#x578B;&#x4E0E;&#x7EC4;&#x4EF6;&#x7C7B;&#x578B;&#x662F;&#x517C;&#x5BB9;&#x7684;&#x3002;
 ByteBuf message = Unpooled.wrappedBuffer(header, body);
 
-// 因此，你甚至可以通过混合复合类型与普通缓冲区来创建一个复合类型。
+// &#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DF7;&#x5408;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x4E0E;&#x666E;&#x901A;&#x7F13;&#x51B2;&#x533A;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x3002;
 ByteBuf messageWithFooter = Unpooled.wrappedBuffer(message, footer);
 
-// 由于复合类型仍是 ByteBuf，访问其内容很容易，
-//并且访问方法的行为就像是访问一个单独的缓冲区，
-//即使你想访问的区域是跨多个组件。
-//这里的无符号整数读取位于 body 和 footer
+// &#x7531;&#x4E8E;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x4ECD;&#x662F; ByteBuf&#xFF0C;&#x8BBF;&#x95EE;&#x5176;&#x5185;&#x5BB9;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;
+//&#x5E76;&#x4E14;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;&#x7684;&#x884C;&#x4E3A;&#x5C31;&#x50CF;&#x662F;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x7F13;&#x51B2;&#x533A;&#xFF0C;
+//&#x5373;&#x4F7F;&#x4F60;&#x60F3;&#x8BBF;&#x95EE;&#x7684;&#x533A;&#x57DF;&#x662F;&#x8DE8;&#x591A;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;
+//&#x8FD9;&#x91CC;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x8BFB;&#x53D6;&#x4F4D;&#x4E8E; body &#x548C; footer
 messageWithFooter.getUnsignedInt(
      messageWithFooter.readableBytes() - footer.readableBytes() - 1);
-</code></pre><h3 id="automatic-capacity-extension-">Automatic Capacity Extension 自动容量扩展</h3>
-<p>许多协议定义可变长度的消息，这意味着没有办法确定消息的长度，直到你构建的消息。或者，在计算长度的精确值时，带来了困难和不便。这就像当你建立一个字符串。你经常估计得到的字符串的长度，让 StringBuffer 扩大了其本身的需求。</p>
-<pre><code>// 一种新的动态缓冲区被创建。在内部，实际缓冲区是被“懒”创建，从而避免潜在的浪费内存空间。
+</code></pre><h3 id="automatic-capacity-extension-&#x81EA;&#x52A8;&#x5BB9;&#x91CF;&#x6269;&#x5C55;">Automatic Capacity Extension &#x81EA;&#x52A8;&#x5BB9;&#x91CF;&#x6269;&#x5C55;</h3>
+<p>&#x8BB8;&#x591A;&#x534F;&#x8BAE;&#x5B9A;&#x4E49;&#x53EF;&#x53D8;&#x957F;&#x5EA6;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x786E;&#x5B9A;&#x6D88;&#x606F;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x76F4;&#x5230;&#x4F60;&#x6784;&#x5EFA;&#x7684;&#x6D88;&#x606F;&#x3002;&#x6216;&#x8005;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;&#x957F;&#x5EA6;&#x7684;&#x7CBE;&#x786E;&#x503C;&#x65F6;&#xFF0C;&#x5E26;&#x6765;&#x4E86;&#x56F0;&#x96BE;&#x548C;&#x4E0D;&#x4FBF;&#x3002;&#x8FD9;&#x5C31;&#x50CF;&#x5F53;&#x4F60;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F60;&#x7ECF;&#x5E38;&#x4F30;&#x8BA1;&#x5F97;&#x5230;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x8BA9; StringBuffer &#x6269;&#x5927;&#x4E86;&#x5176;&#x672C;&#x8EAB;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<pre><code>// &#x4E00;&#x79CD;&#x65B0;&#x7684;&#x52A8;&#x6001;&#x7F13;&#x51B2;&#x533A;&#x88AB;&#x521B;&#x5EFA;&#x3002;&#x5728;&#x5185;&#x90E8;&#xFF0C;&#x5B9E;&#x9645;&#x7F13;&#x51B2;&#x533A;&#x662F;&#x88AB;&#x201C;&#x61D2;&#x201D;&#x521B;&#x5EFA;&#xFF0C;&#x4ECE;&#x800C;&#x907F;&#x514D;&#x6F5C;&#x5728;&#x7684;&#x6D6A;&#x8D39;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x3002;
 ByteBuf b = Unpooled.buffer(4);
 
-// 当第一个执行写尝试，内部指定初始容量 4 的缓冲区被创建
-b.writeByte(&#39;1&#39;);
+// &#x5F53;&#x7B2C;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5199;&#x5C1D;&#x8BD5;&#xFF0C;&#x5185;&#x90E8;&#x6307;&#x5B9A;&#x521D;&#x59CB;&#x5BB9;&#x91CF; 4 &#x7684;&#x7F13;&#x51B2;&#x533A;&#x88AB;&#x521B;&#x5EFA;
+b.writeByte(&apos;1&apos;);
 
-b.writeByte(&#39;2&#39;);
-b.writeByte(&#39;3&#39;);
-b.writeByte(&#39;4&#39;);
+b.writeByte(&apos;2&apos;);
+b.writeByte(&apos;3&apos;);
+b.writeByte(&apos;4&apos;);
 
-// 当写入的字节数超过初始容量 4 时，
-//内部缓冲区自动分配具有较大的容量
-b.writeByte(&#39;5&#39;);
-</code></pre><h3 id="better-performance-">Better Performance 更好的性能</h3>
-<p>最频繁使用的缓冲区  ByteBuf 的实现是一个非常薄的字节数组包装器（比如，一个字节）。与 ByteBuffer 不同，它没有复杂的边界和索引检查补偿，因此对于 JVM 优化缓冲区的访问更加简单。更多复杂的缓冲区实现是用于拆分或者组合缓存，并且比 ByteBuffer 拥有更好的性能。</p>
+// &#x5F53;&#x5199;&#x5165;&#x7684;&#x5B57;&#x8282;&#x6570;&#x8D85;&#x8FC7;&#x521D;&#x59CB;&#x5BB9;&#x91CF; 4 &#x65F6;&#xFF0C;
+//&#x5185;&#x90E8;&#x7F13;&#x51B2;&#x533A;&#x81EA;&#x52A8;&#x5206;&#x914D;&#x5177;&#x6709;&#x8F83;&#x5927;&#x7684;&#x5BB9;&#x91CF;
+b.writeByte(&apos;5&apos;);
+</code></pre><h3 id="better-performance-&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;">Better Performance &#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;</h3>
+<p>&#x6700;&#x9891;&#x7E41;&#x4F7F;&#x7528;&#x7684;&#x7F13;&#x51B2;&#x533A;  ByteBuf &#x7684;&#x5B9E;&#x73B0;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x8584;&#x7684;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x5305;&#x88C5;&#x5668;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF09;&#x3002;&#x4E0E; ByteBuffer &#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x590D;&#x6742;&#x7684;&#x8FB9;&#x754C;&#x548C;&#x7D22;&#x5F15;&#x68C0;&#x67E5;&#x8865;&#x507F;&#xFF0C;&#x56E0;&#x6B64;&#x5BF9;&#x4E8E; JVM &#x4F18;&#x5316;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x8BBF;&#x95EE;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;&#x66F4;&#x591A;&#x590D;&#x6742;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5B9E;&#x73B0;&#x662F;&#x7528;&#x4E8E;&#x62C6;&#x5206;&#x6216;&#x8005;&#x7EC4;&#x5408;&#x7F13;&#x5B58;&#xFF0C;&#x5E76;&#x4E14;&#x6BD4; ByteBuffer &#x62E5;&#x6709;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
 
                     
                     </section>
@@ -612,16 +557,24 @@ b.writeByte(&#39;5&#39;);
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>
