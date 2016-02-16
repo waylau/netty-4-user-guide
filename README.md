@@ -15,7 +15,7 @@ Let's [READ](SUMMARY.md)!
 
 * <https://github.com/waylau/netty-4-user-guide/> 的 [SUMMARY.md](SUMMARY.md)（源码）
 * <http://waylau.gitbooks.io/netty-4-user-guide/> 点击 Read 按钮（同步更新，国内访问速度一般）
-* <http://www.waylau.com/netty-4-user-guide/>（国内访问速度快，定期更新。最后更新于 2016-2-4）
+* <http://waylau.com/netty-4-user-guide/>（国内访问速度快，定期更新。最后更新于 2016-2-4）
 
 ### Code 源码
 
@@ -27,7 +27,7 @@ Let's [READ](SUMMARY.md)!
 
 ### Contact 联系作者:
 
-* Blog:[www.waylau.com](http://www.waylau.com)
+* Blog:[waylau.com](http://waylau.com)
 * Gmail: [waylau521(at)gmail.com](mailto:waylau521@gmail.com)
 * Weibo: [waylau521](http://weibo.com/waylau521)
 * Twitter: [waylau521](https://twitter.com/waylau521)
