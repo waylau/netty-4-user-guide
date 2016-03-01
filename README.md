@@ -27,7 +27,7 @@ Let's [READ](SUMMARY.md)!
 
 ### Contact 联系作者:
 
-* Blog:[waylau.com](http://waylau.com)
+* Blog: [waylau.com](http://waylau.com)
 * Gmail: [waylau521(at)gmail.com](mailto:waylau521@gmail.com)
 * Weibo: [waylau521](http://weibo.com/waylau521)
 * Twitter: [waylau521](https://twitter.com/waylau521)
