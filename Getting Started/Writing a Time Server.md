@@ -59,4 +59,4 @@ Writing a Time Server 写个时间服务器
     
 	$ rdate -o <port> -p <host>
 
-Port 是你在main()函数中指定的端口，host 使用 locahost 就可以了。
+Port 是你在main()函数中指定的端口，host 使用 localhost 就可以了。
