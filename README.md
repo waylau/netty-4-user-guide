@@ -1,4 +1,4 @@
-# Netty 4.x User Guide 中文翻译《Netty 4.x 用户指南》
+# Netty 4.x User Guide《Netty 4.x 用户指南》/《Netty原理解析与开发实战》
 
 ![](images/netty_logo.jpg)
 
@@ -20,6 +20,21 @@ Let's [READ](SUMMARY.md)!
 ### Code 源码
 
 书中所有示例源码，移步至<https://github.com/waylau/netty-4-user-guide-demos>
+
+
+### 配套书籍
+
+
+如果你喜欢本开源书，也请支持下该书的正式出版物《[Netty原理解析与开发实战](https://book.douban.com/subject/35317298/)》
+
+![](images/netty.jpg)
+
+实体店及各大网店有售。
+
+* 当当：<http://product.dangdang.com/29180429.html>
+* 京东：<https://item.jd.com/13072504.html>
+
+
 
 ### Issue 意见、建议
 
