@@ -15,7 +15,7 @@ Let's [READ](SUMMARY.md)!
 
 * <https://github.com/waylau/netty-4-user-guide/> 的 [SUMMARY.md](SUMMARY.md)（源码）
 * <http://waylau.gitbooks.io/netty-4-user-guide/> 点击 Read 按钮（同步更新，国内访问速度一般）
-* <https://waylau.com/netty-4-user-guide/>（国内访问速度快，定期更新。最后更新于 2018-1-17）
+* <https://waylau.com/netty-4-user-guide/>（国内访问速度快，定期更新。最后更新于 2021-1-22）
 
 ### Code 源码
 
@@ -27,12 +27,12 @@ Let's [READ](SUMMARY.md)!
 
 如果你喜欢本开源书，也请支持下该书的正式出版物《[Netty原理解析与开发实战](https://book.douban.com/subject/35317298/)》
 
-![](images/netty.jpg)
-
 实体店及各大网店有售。
 
 * 当当：<http://product.dangdang.com/29180429.html>
 * 京东：<https://item.jd.com/13072504.html>
+
+![](images/netty.jpg)
 
 
 
