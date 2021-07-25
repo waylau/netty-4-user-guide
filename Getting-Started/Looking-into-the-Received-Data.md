@@ -12,6 +12,7 @@ Looking into the Received Data 查看收到的数据
 
 我们已经知道 channelRead() 方法是在数据被接收的时候调用。让我们放一些代码到 DiscardServerHandler 类的 channelRead() 方法。
 
+```java
     @Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 	    ByteBuf in = (ByteBuf) msg;
@@ -24,6 +25,7 @@ Looking into the Received Data 查看收到的数据
 	        ReferenceCountUtil.release(msg); // (2)
 	    }
 	}
+```
 
 1.这个低效的循环事实上可以简化为:System.out.println(in.toString(io.netty.util.CharsetUtil.US_ASCII))
 
