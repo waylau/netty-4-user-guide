@@ -75,6 +75,5 @@ public class TimeClient {
 
 1. 在 TCP/IP 中，Netty 会把读到的数据放到 ByteBuf 的数据结构中。
 
-![](http://99btgc01.info/uploads/2015/02/time.jpg)
 
 这样看起来非常简单，并且和服务端的那个例子的代码也相差不多。然而，处理器有时候会因为抛出 IndexOutOfBoundsException 而拒绝工作。在下个部分我们会讨论为什么会发生这种情况。
