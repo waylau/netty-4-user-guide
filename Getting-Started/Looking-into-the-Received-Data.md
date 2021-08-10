@@ -4,9 +4,9 @@ Looking into the Received Data 查看收到的数据
 
 现在我们已经编写出我们第一个服务端，我们需要测试一下他是否真的可以运行。最简单的测试方法是用 telnet 命令。例如，你可以在命令行上输入`telnet localhost 8080`或者其他类型参数。
 
-![](![](../images/discard-server-001.png)
+![](../images/discard-server-001.png)
 
-![](![](../images/discard-server-002.png)
+![](../images/discard-server-002.png)
 
 然而我们能说这个服务端是正常运行了吗？事实上我们也不知道，因为他是一个 discard 服务，你根本不可能得到任何的响应。为了证明他仍然是在正常工作的，让我们修改服务端的程序来打印出他到底接收到了什么。
 
