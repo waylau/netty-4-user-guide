@@ -4,14 +4,15 @@ Looking into the Received Data 查看收到的数据
 
 现在我们已经编写出我们第一个服务端，我们需要测试一下他是否真的可以运行。最简单的测试方法是用 telnet 命令。例如，你可以在命令行上输入`telnet localhost 8080`或者其他类型参数。
 
-![](http://99btgc01.info/uploads/2015/02/telnet%281%29.jpg)
+![](../images/discard-server-001.png)
 
-![](http://99btgc01.info/uploads/2015/02/telnet2%281%29.jpg)
+![](../images/discard-server-002.png)
 
 然而我们能说这个服务端是正常运行了吗？事实上我们也不知道，因为他是一个 discard 服务，你根本不可能得到任何的响应。为了证明他仍然是在正常工作的，让我们修改服务端的程序来打印出他到底接收到了什么。
 
 我们已经知道 channelRead() 方法是在数据被接收的时候调用。让我们放一些代码到 DiscardServerHandler 类的 channelRead() 方法。
 
+```java
     @Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 	    ByteBuf in = (ByteBuf) msg;
@@ -24,6 +25,7 @@ Looking into the Received Data 查看收到的数据
 	        ReferenceCountUtil.release(msg); // (2)
 	    }
 	}
+```
 
 1.这个低效的循环事实上可以简化为:System.out.println(in.toString(io.netty.util.CharsetUtil.US_ASCII))
 

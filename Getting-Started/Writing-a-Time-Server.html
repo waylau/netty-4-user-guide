@@ -257,7 +257,7 @@
                 <a href="Speaking-in-POJO-instead-of-ByteBuf.html">
             
                     
-                    Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                    Speaking in POJO instead of ByteBuf 用 POJO 代替 ByteBuf
             
                 </a>
             
@@ -438,7 +438,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121578210430057&fid=23">
             
                     
-                    Netty——ChannelHandler之概述
+                    Netty——ChannelHandler 之概述
             
                 </a>
             
@@ -451,7 +451,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121588902470048&fid=23">
             
                     
-                    Netty——ChannelHandler之flush行为控制
+                    Netty——ChannelHandler 之 flush 行为控制
             
                 </a>
             
@@ -464,7 +464,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121602029690061&fid=23">
             
                     
-                    Netty——ChannelHandler之IP地址过滤
+                    Netty——ChannelHandler 之 IP 地址过滤
             
                 </a>
             
@@ -477,7 +477,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201124824648340084&fid=23">
             
                     
-                    Netty——ChannelHandler之流量整形
+                    Netty——ChannelHandler 之流量整形
             
                 </a>
             
@@ -490,7 +490,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201125631815620129&fid=23">
             
                     
-                    Netty——ChannelHandler之流量整形AbstractTrafficShapingHandler类
+                    Netty——ChannelHandler 之流量整形 AbstractTrafficShapingHandler 类
             
                 </a>
             
@@ -503,7 +503,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201126757703410192&fid=23">
             
                     
-                    Netty——ChannelHandler之安全处理
+                    Netty——ChannelHandler 之安全处理
             
                 </a>
             
@@ -516,7 +516,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127654293200021&fid=23">
             
                     
-                    Netty——HTTP之Netty对于HTTP的支持
+                    Netty——HTTP 之 Netty 对于 HTTP 的支持
             
                 </a>
             
@@ -529,7 +529,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127656849730021&fid=23">
             
                     
-                    Netty——HTTP之基于HTTP协议的Web服务器
+                    Netty——HTTP 之基于 HTTP 协议的 Web 服务器
             
                 </a>
             
@@ -542,7 +542,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127650592760020&fid=23">
             
                     
-                    Netty——HTTP之HTTP协议
+                    Netty——HTTP 之 HTTP 协议
             
                 </a>
             
@@ -555,7 +555,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201133750897750140&fid=23">
             
                     
-                    Netty——案例分析之Vert.x 
+                    Netty——案例分析之 Vert.x 
             
                 </a>
             
@@ -568,7 +568,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201133760691530141&fid=23">
             
                     
-                    Netty——案例分析之RocketMQ
+                    Netty——案例分析之 RocketMQ
             
                 </a>
             
@@ -581,7 +581,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201134505783170160&fid=23">
             
                     
-                    Netty——案例分析之Dubbo
+                    Netty——案例分析之 Dubbo
             
                 </a>
             
@@ -640,48 +640,57 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="writing-a-time-server-&#x5199;&#x4E2A;&#x65F6;&#x95F4;&#x670D;&#x52A1;&#x5668;">Writing a Time Server &#x5199;&#x4E2A;&#x65F6;&#x95F4;&#x670D;&#x52A1;&#x5668;</h1>
-<p>&#x5728;&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#x88AB;&#x5B9E;&#x73B0;&#x7684;&#x534F;&#x8BAE;&#x662F; <a href="http://tools.ietf.org/html/rfc868" target="_blank">TIME</a> &#x534F;&#x8BAE;&#x3002;&#x548C;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x5728;&#x4E0D;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x8BF7;&#x6C42;&#x65F6;&#x4ED6;&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x542B;32&#x4F4D;&#x7684;&#x6574;&#x6570;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x65E6;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5C31;&#x4F1A;&#x7ACB;&#x5373;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4F60;&#x4F1A;&#x5B66;&#x4E60;&#x5230;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x548C;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5B8C;&#x6210;&#x65F6;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#x88AB;&#x5B9E;&#x73B0;&#x7684;&#x534F;&#x8BAE;&#x662F; <a href="http://tools.ietf.org/html/rfc868" target="_blank">TIME</a> &#x534F;&#x8BAE;&#x3002;&#x548C;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x5728;&#x4E0D;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x8BF7;&#x6C42;&#x65F6;&#x4ED6;&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x542B; 32 &#x4F4D;&#x7684;&#x6574;&#x6570;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x65E6;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5C31;&#x4F1A;&#x7ACB;&#x5373;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4F60;&#x4F1A;&#x5B66;&#x4E60;&#x5230;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x548C;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5B8C;&#x6210;&#x65F6;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</p>
 <p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5FFD;&#x7565;&#x4EFB;&#x4F55;&#x63A5;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x5728;&#x8FDE;&#x63A5;&#x88AB;&#x521B;&#x5EFA;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; channelRead() &#x65B9;&#x6CD5;&#x4E86;&#xFF0C;&#x4EE3;&#x66FF;&#x4ED6;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8986;&#x76D6; channelActive() &#x65B9;&#x6CD5;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x5C31;&#x662F;&#x5B9E;&#x73B0;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
-<pre><code>public class TimeServerHandler extends ChannelInboundHandlerAdapter {
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TimeServerHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ChannelInboundHandlerAdapter</span> </span>{
 
-    @Override
-    public void channelActive(final ChannelHandlerContext ctx) { // (1)
-        final ByteBuf time = ctx.alloc().buffer(4); // (2)
-        time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">channelActive</span><span class="hljs-params">(<span class="hljs-keyword">final</span> ChannelHandlerContext ctx)</span> </span>{ <span class="hljs-comment">// (1)</span>
+        <span class="hljs-keyword">final</span> ByteBuf time = ctx.alloc().buffer(<span class="hljs-number">4</span>); <span class="hljs-comment">// (2)</span>
+        time.writeInt((<span class="hljs-keyword">int</span>) (System.currentTimeMillis() / <span class="hljs-number">1000L</span> + <span class="hljs-number">2208988800L</span>));
 
-        final ChannelFuture f = ctx.writeAndFlush(time); // (3)
-        f.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture future) {
-                assert f == future;
+        <span class="hljs-keyword">final</span> ChannelFuture f = ctx.writeAndFlush(time); <span class="hljs-comment">// (3)</span>
+        f.addListener(<span class="hljs-keyword">new</span> ChannelFutureListener() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">operationComplete</span><span class="hljs-params">(ChannelFuture future)</span> </span>{
+                <span class="hljs-keyword">assert</span> f == future;
                 ctx.close();
             }
-        }); // (4)
+        }); <span class="hljs-comment">// (4)</span>
     }
 
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">exceptionCaught</span><span class="hljs-params">(ChannelHandlerContext ctx, Throwable cause)</span> </span>{
         cause.printStackTrace();
         ctx.close();
     }
 }
-</code></pre><p>1.channelActive() &#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x5728;&#x8FDE;&#x63A5;&#x88AB;&#x5EFA;&#x7ACB;&#x5E76;&#x4E14;&#x51C6;&#x5907;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x56E0;&#x6B64;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x91CC;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x7684;32&#x4F4D;&#x6574;&#x6570;&#x6D88;&#x606F;&#x7684;&#x6784;&#x5EFA;&#x5DE5;&#x4F5C;&#x3002;</p>
-<p>2.&#x4E3A;&#x4E86;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5199;&#x5165;&#x4E00;&#x4E2A;32&#x4F4D;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x81F3;&#x5C11;&#x6709;4&#x4E2A;&#x5B57;&#x8282;&#x7684; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a>&#x3002;&#x901A;&#x8FC7; ChannelHandlerContext.alloc() &#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x7684;<a href="http://netty.io/4.0/api/io/netty/buffer/ByteBufAllocator.html" target="_blank">ByteBufAllocator</a>&#xFF0C;&#x7136;&#x540E;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x3002;</p>
-<p>3.&#x548C;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x6784;&#x5EFA;&#x597D;&#x7684;&#x6D88;&#x606F;&#x3002;&#x4F46;&#x662F;&#x7B49;&#x4E00;&#x7B49;&#xFF0C;flip &#x5728;&#x54EA;&#xFF1F;&#x96BE;&#x9053;&#x6211;&#x4EEC;&#x4F7F;&#x7528; NIO &#x53D1;&#x9001;&#x6D88;&#x606F;&#x65F6;&#x4E0D;&#x662F;&#x8C03;&#x7528; java.nio.ByteBuffer.flip() &#x5417;&#xFF1F;ByteBuf &#x4E4B;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x56E0;&#x4E3A;&#x6709;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x8BFB;&#x64CD;&#x4F5C;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x5199;&#x64CD;&#x4F5C;&#x3002;&#x5F53;&#x4F60;&#x5411; ByteBuf &#x91CC;&#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x5199;&#x6307;&#x9488;&#x7684;&#x7D22;&#x5F15;&#x5C31;&#x4F1A;&#x589E;&#x52A0;&#xFF0C;&#x540C;&#x65F6;&#x8BFB;&#x6307;&#x9488;&#x7684;&#x7D22;&#x5F15;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#x3002;&#x8BFB;&#x6307;&#x9488;&#x7D22;&#x5F15;&#x548C;&#x5199;&#x6307;&#x9488;&#x7D22;&#x5F15;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x4E86;&#x6D88;&#x606F;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x3002;</p>
+</code></pre>
+<ol>
+<li><p>channelActive() &#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x5728;&#x8FDE;&#x63A5;&#x88AB;&#x5EFA;&#x7ACB;&#x5E76;&#x4E14;&#x51C6;&#x5907;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x56E0;&#x6B64;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x91CC;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x7684; 32 &#x4F4D;&#x6574;&#x6570;&#x6D88;&#x606F;&#x7684;&#x6784;&#x5EFA;&#x5DE5;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>&#x4E3A;&#x4E86;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5199;&#x5165;&#x4E00;&#x4E2A; 32 &#x4F4D;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x81F3;&#x5C11;&#x6709; 4 &#x4E2A;&#x5B57;&#x8282;&#x7684; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a>&#x3002;&#x901A;&#x8FC7; ChannelHandlerContext.alloc() &#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x7684;<a href="http://netty.io/4.0/api/io/netty/buffer/ByteBufAllocator.html" target="_blank">ByteBufAllocator</a>&#xFF0C;&#x7136;&#x540E;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x3002;</p>
+</li>
+<li><p>&#x548C;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x6784;&#x5EFA;&#x597D;&#x7684;&#x6D88;&#x606F;&#x3002;&#x4F46;&#x662F;&#x7B49;&#x4E00;&#x7B49;&#xFF0C;flip &#x5728;&#x54EA;&#xFF1F;&#x96BE;&#x9053;&#x6211;&#x4EEC;&#x4F7F;&#x7528; NIO &#x53D1;&#x9001;&#x6D88;&#x606F;&#x65F6;&#x4E0D;&#x662F;&#x8C03;&#x7528; java.nio.ByteBuffer.flip() &#x5417;&#xFF1F;ByteBuf &#x4E4B;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x56E0;&#x4E3A;&#x6709;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x8BFB;&#x64CD;&#x4F5C;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x5199;&#x64CD;&#x4F5C;&#x3002;&#x5F53;&#x4F60;&#x5411; ByteBuf &#x91CC;&#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x5199;&#x6307;&#x9488;&#x7684;&#x7D22;&#x5F15;&#x5C31;&#x4F1A;&#x589E;&#x52A0;&#xFF0C;&#x540C;&#x65F6;&#x8BFB;&#x6307;&#x9488;&#x7684;&#x7D22;&#x5F15;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#x3002;&#x8BFB;&#x6307;&#x9488;&#x7D22;&#x5F15;&#x548C;&#x5199;&#x6307;&#x9488;&#x7D22;&#x5F15;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x4E86;&#x6D88;&#x606F;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x3002;</p>
+</li>
+</ol>
 <p>&#x6BD4;&#x8F83;&#x8D77;&#x6765;&#xFF0C;NIO &#x7F13;&#x51B2;&#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x7B80;&#x6D01;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8BA1;&#x7B97;&#x51FA;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x5C3E;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x8C03;&#x7528; flip &#x65B9;&#x6CD5;&#x3002;&#x5F53;&#x4F60;&#x5FD8;&#x8BB0;&#x8C03;&#x7528; flip &#x65B9;&#x6CD5;&#x800C;&#x5F15;&#x8D77;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x6216;&#x8005;&#x9519;&#x8BEF;&#x6570;&#x636E;&#x88AB;&#x53D1;&#x9001;&#x65F6;&#xFF0C;&#x4F60;&#x4F1A;&#x9677;&#x5165;&#x56F0;&#x5883;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x5728; Netty &#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x6307;&#x9488;&#x3002;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x8FD9;&#x6837;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4F1A;&#x8BA9;&#x4F60;&#x8FC7;&#x7A0B;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7684;&#x5BB9;&#x6613;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x5DF2;&#x7ECF;&#x4E60;&#x60EF;&#x4E00;&#x79CD;&#x6CA1;&#x6709;&#x4F7F;&#x7528; flip &#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
 <p>&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F; ChannelHandlerContext.write() (&#x548C; writeAndFlush() )&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelFuture.html" target="_blank">ChannelFuture</a> &#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x4E2A; ChannelFuture &#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x7684; I/O &#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x64CD;&#x4F5C;&#x90FD;&#x4E0D;&#x4F1A;&#x9A6C;&#x4E0A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x5728; Netty &#x91CC;&#x6240;&#x6709;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5728;&#x6D88;&#x606F;&#x88AB;&#x53D1;&#x9001;&#x4E4B;&#x524D;&#x53EF;&#x80FD;&#x4F1A;&#x5148;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</p>
-<pre><code class="lang-java">
-    Channel ch = ...;
-    ch.writeAndFlush(message);
-    ch.close();
+<pre><code class="lang-java">Channel ch = ...;
+ch.writeAndFlush(message);
+ch.close();
 </code></pre>
-<p>&#x56E0;&#x6B64;&#x4F60;&#x9700;&#x8981;&#x5728; write() &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684; ChannelFuture &#x5B8C;&#x6210;&#x540E;&#x8C03;&#x7528; close() &#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x5F53;&#x4ED6;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4ED6;&#x4F1A;&#x901A;&#x77E5;&#x4ED6;&#x7684;&#x76D1;&#x542C;&#x8005;&#x3002;&#x8BF7;&#x6CE8;&#x610F;,close() &#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x7ACB;&#x9A6C;&#x5173;&#x95ED;&#xFF0C;&#x4ED6;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;ChannelFuture&#x3002;</p>
-<p>4.&#x5F53;&#x4E00;&#x4E2A;&#x5199;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x662F;&#x5982;&#x4F55;&#x901A;&#x77E5;&#x5230;&#x6211;&#x4EEC;&#xFF1F;&#x8FD9;&#x4E2A;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x5730;&#x5728;&#x8FD4;&#x56DE;&#x7684; ChannelFuture &#x4E0A;&#x589E;&#x52A0;&#x4E00;&#x4E2A;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelFutureListener.html" target="_blank">ChannelFutureListener</a>&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x7684; ChannelFutureListener &#x7C7B;&#x7528;&#x6765;&#x5728;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x65F6;&#x5173;&#x95ED; Channel&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x4F60;&#x9700;&#x8981;&#x5728; write() &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684; ChannelFuture &#x5B8C;&#x6210;&#x540E;&#x8C03;&#x7528; close() &#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x5F53;&#x4ED6;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4ED6;&#x4F1A;&#x901A;&#x77E5;&#x4ED6;&#x7684;&#x76D1;&#x542C;&#x8005;&#x3002;&#x8BF7;&#x6CE8;&#x610F;,close() &#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x7ACB;&#x9A6C;&#x5173;&#x95ED;&#xFF0C;&#x4ED6;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; ChannelFuture&#x3002;</p>
+<ol>
+<li>&#x5F53;&#x4E00;&#x4E2A;&#x5199;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x662F;&#x5982;&#x4F55;&#x901A;&#x77E5;&#x5230;&#x6211;&#x4EEC;&#xFF1F;&#x8FD9;&#x4E2A;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x5730;&#x5728;&#x8FD4;&#x56DE;&#x7684; ChannelFuture &#x4E0A;&#x589E;&#x52A0;&#x4E00;&#x4E2A;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelFutureListener.html" target="_blank">ChannelFutureListener</a>&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x7684; ChannelFutureListener &#x7C7B;&#x7528;&#x6765;&#x5728;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x65F6;&#x5173;&#x95ED; Channel&#x3002;</li>
+</ol>
 <p>&#x6216;&#x8005;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x7684;&#x9884;&#x5B9A;&#x4E49;&#x76D1;&#x542C;&#x5668;&#x4EE3;&#x7801;:</p>
-<pre><code>f.addListener(ChannelFutureListener.CLOSE);
-</code></pre><p>&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7684;time&#x670D;&#x52A1;&#x5982;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x7684;&#x4E00;&#x6837;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; UNIX &#x7684; rdate &#x547D;&#x4EE4;</p>
-<pre><code>$ rdate -o &lt;port&gt; -p &lt;host&gt;
-</code></pre><p>Port &#x662F;&#x4F60;&#x5728;main()&#x51FD;&#x6570;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;host &#x4F7F;&#x7528; localhost &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<pre><code class="lang-java">f.addListener(ChannelFutureListener.CLOSE);
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7684; time &#x670D;&#x52A1;&#x5982;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x7684;&#x4E00;&#x6837;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; UNIX &#x7684; rdate &#x547D;&#x4EE4;</p>
+<pre><code class="lang-SHELL">$ rdate -o &lt;port&gt; -p &lt;host&gt;
+</code></pre>
+<p>Port &#x662F;&#x4F60;&#x5728; main()&#x51FD;&#x6570;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;host &#x4F7F;&#x7528; localhost &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
 
                                 
                                 </section>
@@ -725,7 +734,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Writing a Time Server 写个时间服务器","level":"1.3.5","depth":2,"next":{"title":"Writing a Time Client 写个时间客户端","level":"1.3.6","depth":2,"path":"Getting-Started/Writing-a-Time-Client.md","ref":"Getting-Started/Writing-a-Time-Client.md","articles":[]},"previous":{"title":"Writing an Echo Server 写个应答服务器","level":"1.3.4","depth":2,"path":"Getting-Started/Writing-an-Echo-Server.md","ref":"Getting-Started/Writing-an-Echo-Server.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Getting-Started/Writing-a-Time-Server.md","mtime":"2019-07-30T13:12:27.144Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-22T14:43:25.297Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Writing a Time Server 写个时间服务器","level":"1.3.5","depth":2,"next":{"title":"Writing a Time Client 写个时间客户端","level":"1.3.6","depth":2,"path":"Getting-Started/Writing-a-Time-Client.md","ref":"Getting-Started/Writing-a-Time-Client.md","articles":[]},"previous":{"title":"Writing an Echo Server 写个应答服务器","level":"1.3.4","depth":2,"path":"Getting-Started/Writing-an-Echo-Server.md","ref":"Getting-Started/Writing-an-Echo-Server.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Getting-Started/Writing-a-Time-Server.md","mtime":"2021-08-10T14:32:58.704Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-31T08:22:59.522Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

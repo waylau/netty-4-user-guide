@@ -257,7 +257,7 @@
                 <a href="Speaking-in-POJO-instead-of-ByteBuf.html">
             
                     
-                    Speaking in POJO instead of ByteBuf 用POJO代替ByteBuf
+                    Speaking in POJO instead of ByteBuf 用 POJO 代替 ByteBuf
             
                 </a>
             
@@ -438,7 +438,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121578210430057&fid=23">
             
                     
-                    Netty——ChannelHandler之概述
+                    Netty——ChannelHandler 之概述
             
                 </a>
             
@@ -451,7 +451,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121588902470048&fid=23">
             
                     
-                    Netty——ChannelHandler之flush行为控制
+                    Netty——ChannelHandler 之 flush 行为控制
             
                 </a>
             
@@ -464,7 +464,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201121602029690061&fid=23">
             
                     
-                    Netty——ChannelHandler之IP地址过滤
+                    Netty——ChannelHandler 之 IP 地址过滤
             
                 </a>
             
@@ -477,7 +477,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201124824648340084&fid=23">
             
                     
-                    Netty——ChannelHandler之流量整形
+                    Netty——ChannelHandler 之流量整形
             
                 </a>
             
@@ -490,7 +490,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201125631815620129&fid=23">
             
                     
-                    Netty——ChannelHandler之流量整形AbstractTrafficShapingHandler类
+                    Netty——ChannelHandler 之流量整形 AbstractTrafficShapingHandler 类
             
                 </a>
             
@@ -503,7 +503,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201126757703410192&fid=23">
             
                     
-                    Netty——ChannelHandler之安全处理
+                    Netty——ChannelHandler 之安全处理
             
                 </a>
             
@@ -516,7 +516,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127654293200021&fid=23">
             
                     
-                    Netty——HTTP之Netty对于HTTP的支持
+                    Netty——HTTP 之 Netty 对于 HTTP 的支持
             
                 </a>
             
@@ -529,7 +529,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127656849730021&fid=23">
             
                     
-                    Netty——HTTP之基于HTTP协议的Web服务器
+                    Netty——HTTP 之基于 HTTP 协议的 Web 服务器
             
                 </a>
             
@@ -542,7 +542,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201127650592760020&fid=23">
             
                     
-                    Netty——HTTP之HTTP协议
+                    Netty——HTTP 之 HTTP 协议
             
                 </a>
             
@@ -555,7 +555,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201133750897750140&fid=23">
             
                     
-                    Netty——案例分析之Vert.x 
+                    Netty——案例分析之 Vert.x 
             
                 </a>
             
@@ -568,7 +568,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201133760691530141&fid=23">
             
                     
-                    Netty——案例分析之RocketMQ
+                    Netty——案例分析之 RocketMQ
             
                 </a>
             
@@ -581,7 +581,7 @@
                 <a target="_blank" href="https://developer.huawei.com/consumer/cn/forum/topicview?tid=0201134505783170160&fid=23">
             
                     
-                    Netty——案例分析之Dubbo
+                    Netty——案例分析之 Dubbo
             
                 </a>
             
@@ -642,110 +642,113 @@
                                 <h1 id="writing-a-discard-server-&#x5199;&#x4E2A;&#x629B;&#x5F03;&#x670D;&#x52A1;&#x5668;">Writing a Discard Server &#x5199;&#x4E2A;&#x629B;&#x5F03;&#x670D;&#x52A1;&#x5668;</h1>
 <p>&#x4E16;&#x4E0A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x534F;&#x8BAE;&#x4E0D;&#x662F;&apos;Hello, World!&apos; &#x800C;&#x662F; <a href="http://tools.ietf.org/html/rfc863" target="_blank">DISCARD(&#x629B;&#x5F03;&#x670D;&#x52A1;)</a>&#x3002;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5C06;&#x4F1A;&#x629B;&#x5F03;&#x4EFB;&#x4F55;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x54CD;&#x5E94;&#x3002;</p>
 <p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0; DISCARD &#x534F;&#x8BAE;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x5FFD;&#x7565;&#x6240;&#x6709;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x4ECE; handler &#xFF08;&#x5904;&#x7406;&#x5668;&#xFF09;&#x7684;&#x5B9E;&#x73B0;&#x5F00;&#x59CB;&#xFF0C;handler &#x662F;&#x7531; Netty &#x751F;&#x6210;&#x7528;&#x6765;&#x5904;&#x7406; I/O &#x4E8B;&#x4EF6;&#x7684;&#x3002;</p>
-<pre><code> import io.netty.buffer.ByteBuf;
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> io.netty.buffer.ByteBuf;
 
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInboundHandlerAdapter;
+<span class="hljs-keyword">import</span> io.netty.channel.ChannelHandlerContext;
+<span class="hljs-keyword">import</span> io.netty.channel.ChannelInboundHandlerAdapter;
 
-/**
- * &#x5904;&#x7406;&#x670D;&#x52A1;&#x7AEF; channel.
- */
-public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
+<span class="hljs-comment">/**
+    * &#x5904;&#x7406;&#x670D;&#x52A1;&#x7AEF; channel.
+    */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DiscardServerHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ChannelInboundHandlerAdapter</span> </span>{ <span class="hljs-comment">// (1)</span>
 
-    @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) { // (2)
-        // &#x9ED8;&#x9ED8;&#x5730;&#x4E22;&#x5F03;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;
-        ((ByteBuf) msg).release(); // (3)
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">channelRead</span><span class="hljs-params">(ChannelHandlerContext ctx, Object msg)</span> </span>{ <span class="hljs-comment">// (2)</span>
+        <span class="hljs-comment">// &#x9ED8;&#x9ED8;&#x5730;&#x4E22;&#x5F03;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;</span>
+        ((ByteBuf) msg).release(); <span class="hljs-comment">// (3)</span>
     }
 
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) { // (4)
-        // &#x5F53;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x5C31;&#x5173;&#x95ED;&#x8FDE;&#x63A5;
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">exceptionCaught</span><span class="hljs-params">(ChannelHandlerContext ctx, Throwable cause)</span> </span>{ <span class="hljs-comment">// (4)</span>
+        <span class="hljs-comment">// &#x5F53;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x5C31;&#x5173;&#x95ED;&#x8FDE;&#x63A5;</span>
         cause.printStackTrace();
         ctx.close();
     }
 }
-</code></pre><p>1.DiscardServerHandler &#x7EE7;&#x627F;&#x81EA;  <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandlerAdapter.html" target="_blank">ChannelInboundHandlerAdapter</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandler.html" target="_blank">ChannelInboundHandler</a>&#x63A5;&#x53E3;&#xFF0C;ChannelInboundHandler &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x73B0;&#x5728;&#x4EC5;&#x4EC5;&#x53EA;&#x9700;&#x8981;&#x7EE7;&#x627F; ChannelInboundHandlerAdapter &#x7C7B;&#x800C;&#x4E0D;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>2.&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x8986;&#x76D6;&#x4E86; chanelRead() &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x3002;&#x6BCF;&#x5F53;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x65B0;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6536;&#x5230;&#x6D88;&#x606F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x662F; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a></p>
+</code></pre>
+<p>1.DiscardServerHandler &#x7EE7;&#x627F;&#x81EA; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandlerAdapter.html" target="_blank">ChannelInboundHandlerAdapter</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelInboundHandler.html" target="_blank">ChannelInboundHandler</a>&#x63A5;&#x53E3;&#xFF0C;ChannelInboundHandler &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x73B0;&#x5728;&#x4EC5;&#x4EC5;&#x53EA;&#x9700;&#x8981;&#x7EE7;&#x627F; ChannelInboundHandlerAdapter &#x7C7B;&#x800C;&#x4E0D;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>2.&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x8986;&#x76D6;&#x4E86; channelRead() &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x3002;&#x6BCF;&#x5F53;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x65B0;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6536;&#x5230;&#x6D88;&#x606F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x662F; <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBuf.html" target="_blank">ByteBuf</a></p>
 <p>3.&#x4E3A;&#x4E86;&#x5B9E;&#x73B0; DISCARD &#x534F;&#x8BAE;&#xFF0C;&#x5904;&#x7406;&#x5668;&#x4E0D;&#x5F97;&#x4E0D;&#x5FFD;&#x7565;&#x6240;&#x6709;&#x63A5;&#x53D7;&#x5230;&#x7684;&#x6D88;&#x606F;&#x3002;ByteBuf &#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x663E;&#x793A;&#x5730;&#x8C03;&#x7528; release() &#x65B9;&#x6CD5;&#x6765;&#x91CA;&#x653E;&#x3002;&#x8BF7;&#x8BB0;&#x4F4F;&#x5904;&#x7406;&#x5668;&#x7684;&#x804C;&#x8D23;&#x662F;&#x91CA;&#x653E;&#x6240;&#x6709;&#x4F20;&#x9012;&#x5230;&#x5904;&#x7406;&#x5668;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x901A;&#x5E38;&#xFF0C;channelRead() &#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-java">
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">channelRead</span><span class="hljs-params">(ChannelHandlerContext ctx, Object msg)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-comment">// Do something with msg</span>
-        } <span class="hljs-keyword">finally</span> {
-            ReferenceCountUtil.release(msg);
-        }
-    }
+<pre><code class="lang-java"><span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">channelRead</span><span class="hljs-params">(ChannelHandlerContext ctx, Object msg)</span> </span>{
+   <span class="hljs-keyword">try</span> {
+       <span class="hljs-comment">// Do something with msg</span>
+   } <span class="hljs-keyword">finally</span> {
+       ReferenceCountUtil.release(msg);
+   }
+}
 </code></pre>
 <p>4.exceptionCaught() &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x662F;&#x5F53;&#x51FA;&#x73B0; Throwable &#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5373;&#x5F53; Netty &#x7531;&#x4E8E; IO &#x9519;&#x8BEF;&#x6216;&#x8005;&#x5904;&#x7406;&#x5668;&#x5728;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x65F6;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x65F6;&#x3002;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x5E94;&#x8BE5;&#x88AB;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x5E76;&#x4E14;&#x628A;&#x5173;&#x8054;&#x7684; channel &#x7ED9;&#x5173;&#x95ED;&#x6389;&#x3002;&#x7136;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4F1A;&#x5728;&#x9047;&#x5230;&#x4E0D;&#x540C;&#x5F02;&#x5E38;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x5728;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x4E4B;&#x524D;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7801;&#x7684;&#x54CD;&#x5E94;&#x6D88;&#x606F;&#x3002;</p>
 <p>&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x4E00;&#x5207;&#x90FD;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86; DISCARD &#x670D;&#x52A1;&#x5668;&#x7684;&#x4E00;&#x534A;&#x529F;&#x80FD;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A; main() &#x65B9;&#x6CD5;&#x6765;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x7AEF;&#x7684; DiscardServerHandler&#x3002;</p>
-<pre><code>import io.netty.bootstrap.ServerBootstrap;
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> io.netty.bootstrap.ServerBootstrap;
+<span class="hljs-keyword">import</span> io.netty.channel.ChannelFuture;
+<span class="hljs-keyword">import</span> io.netty.channel.ChannelInitializer;
+<span class="hljs-keyword">import</span> io.netty.channel.ChannelOption;
+<span class="hljs-keyword">import</span> io.netty.channel.EventLoopGroup;
+<span class="hljs-keyword">import</span> io.netty.channel.nio.NioEventLoopGroup;
+<span class="hljs-keyword">import</span> io.netty.channel.socket.SocketChannel;
+<span class="hljs-keyword">import</span> io.netty.channel.socket.nio.NioServerSocketChannel;
+<span class="hljs-comment">/**
+* &#x4E22;&#x5F03;&#x4EFB;&#x4F55;&#x8FDB;&#x5165;&#x7684;&#x6570;&#x636E;
+*/</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DiscardServer</span> </span>{
+   <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> port;
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DiscardServer</span><span class="hljs-params">(<span class="hljs-keyword">int</span> port)</span> </span>{
+       <span class="hljs-keyword">this</span>.port = port;
+   }
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+       EventLoopGroup bossGroup = <span class="hljs-keyword">new</span> NioEventLoopGroup(); <span class="hljs-comment">// (1)</span>
+       EventLoopGroup workerGroup = <span class="hljs-keyword">new</span> NioEventLoopGroup();
+       <span class="hljs-keyword">try</span> {
+           ServerBootstrap b = <span class="hljs-keyword">new</span> ServerBootstrap(); <span class="hljs-comment">// (2)</span>
+           b.group(bossGroup, workerGroup)
+            .channel(NioServerSocketChannel.class) <span class="hljs-comment">// (3)</span>
+            .childHandler(<span class="hljs-keyword">new</span> ChannelInitializer&lt;SocketChannel&gt;() { <span class="hljs-comment">// (4)</span>
+                <span class="hljs-meta">@Override</span>
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initChannel</span><span class="hljs-params">(SocketChannel ch)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+                    ch.pipeline().addLast(<span class="hljs-keyword">new</span> DiscardServerHandler());
+                }
+            })
+            .option(ChannelOption.SO_BACKLOG, <span class="hljs-number">128</span>)          <span class="hljs-comment">// (5)</span>
+            .childOption(ChannelOption.SO_KEEPALIVE, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// (6)</span>
+           <span class="hljs-comment">// &#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#xFF0C;&#x5F00;&#x59CB;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;</span>
+           ChannelFuture f = b.bind(port).sync(); <span class="hljs-comment">// (7)</span>
 
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
-import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-/**
- * &#x4E22;&#x5F03;&#x4EFB;&#x4F55;&#x8FDB;&#x5165;&#x7684;&#x6570;&#x636E;
- */
-public class DiscardServer {
-
-    private int port;
-
-    public DiscardServer(int port) {
-        this.port = port;
-    }
-
-    public void run() throws Exception {
-        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try {
-            ServerBootstrap b = new ServerBootstrap(); // (2)
-            b.group(bossGroup, workerGroup)
-             .channel(NioServerSocketChannel.class) // (3)
-             .childHandler(new ChannelInitializer&lt;SocketChannel&gt;() { // (4)
-                 @Override
-                 public void initChannel(SocketChannel ch) throws Exception {
-                     ch.pipeline().addLast(new DiscardServerHandler());
-                 }
-             })
-             .option(ChannelOption.SO_BACKLOG, 128)          // (5)
-             .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
-
-            // &#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#xFF0C;&#x5F00;&#x59CB;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;
-            ChannelFuture f = b.bind(port).sync(); // (7)
-
-            // &#x7B49;&#x5F85;&#x670D;&#x52A1;&#x5668;  socket &#x5173;&#x95ED; &#x3002;
-            // &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x4EE5;&#x4F18;&#x96C5;&#x5730;&#x5173;&#x95ED;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;
-            f.channel().closeFuture().sync();
-        } finally {
-            workerGroup.shutdownGracefully();
-            bossGroup.shutdownGracefully();
-        }
-    }
-
-    public static void main(String[] args) throws Exception {
-        int port;
-        if (args.length &gt; 0) {
-            port = Integer.parseInt(args[0]);
-        } else {
-            port = 8080;
-        }
-        new DiscardServer(port).run();
-    }
+           <span class="hljs-comment">// &#x7B49;&#x5F85;&#x670D;&#x52A1;&#x5668;  socket &#x5173;&#x95ED; &#x3002;</span>
+           <span class="hljs-comment">// &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x4EE5;&#x4F18;&#x96C5;&#x5730;&#x5173;&#x95ED;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</span>
+           f.channel().closeFuture().sync();
+       } <span class="hljs-keyword">finally</span> {
+           workerGroup.shutdownGracefully();
+           bossGroup.shutdownGracefully();
+       }
+   }
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+       <span class="hljs-keyword">int</span> port;
+       <span class="hljs-keyword">if</span> (args.length &gt; <span class="hljs-number">0</span>) {
+           port = Integer.parseInt(args[<span class="hljs-number">0</span>]);
+       } <span class="hljs-keyword">else</span> {
+           port = <span class="hljs-number">8080</span>;
+       }
+       <span class="hljs-keyword">new</span> DiscardServer(port).run();
+   }
 }
-</code></pre><p>1.<a href="http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html" target="_blank">NioEventLoopGroup</a> &#x662F;&#x7528;&#x6765;&#x5904;&#x7406;I/O&#x64CD;&#x4F5C;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x5668;&#xFF0C;Netty &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html" target="_blank">EventLoopGroup</a> &#x7684;&#x5B9E;&#x73B0;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x8F93;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x6709;2&#x4E2A; NioEventLoopGroup &#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;boss&#x2019;&#xFF0C;&#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;worker&#x2019;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x5DF2;&#x7ECF;&#x88AB;&#x63A5;&#x6536;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x4E00;&#x65E6;&#x2018;boss&#x2019;&#x63A5;&#x6536;&#x5230;&#x8FDE;&#x63A5;&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#x6CE8;&#x518C;&#x5230;&#x2018;worker&#x2019;&#x4E0A;&#x3002;&#x5982;&#x4F55;&#x77E5;&#x9053;&#x591A;&#x5C11;&#x4E2A;&#x7EBF;&#x7A0B;&#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x4F55;&#x6620;&#x5C04;&#x5230;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/Channel.html" target="_blank">Channel</a>&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x4E8E; EventLoopGroup &#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x4ED6;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
-<p>2.<a href="http://netty.io/4.0/api/io/netty/bootstrap/ServerBootstrap.html" target="_blank">ServerBootstrap</a> &#x662F;&#x4E00;&#x4E2A;&#x542F;&#x52A8; NIO &#x670D;&#x52A1;&#x7684;&#x8F85;&#x52A9;&#x542F;&#x52A8;&#x7C7B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Channel&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF0C;&#x5728;&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
-<p>3.&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x4F7F;&#x7528; <a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7C7B;&#x6765;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x5982;&#x4F55;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
-<p>4.&#x8FD9;&#x91CC;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7C7B;&#x7ECF;&#x5E38;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x5DF2;&#x7ECF;&#x63A5;&#x6536;&#x7684; Channel&#x3002;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelInitializer.html" target="_blank">ChannelInitializer</a> &#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#xFF0C;&#x4ED6;&#x7684;&#x76EE;&#x7684;&#x662F;&#x5E2E;&#x52A9;&#x4F7F;&#x7528;&#x8005;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel&#x3002;&#x4E5F;&#x8BB8;&#x4F60;&#x60F3;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#x7C7B;&#x6BD4;&#x5982;DiscardServerHandler &#x6765;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x6216;&#x8005;&#x5176;&#x5BF9;&#x5E94;&#x7684;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelPipeline.html" target="_blank">ChannelPipeline</a> &#x6765;&#x5B9E;&#x73B0;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x7A0B;&#x5E8F;&#x3002;&#x5F53;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x53D8;&#x7684;&#x590D;&#x6742;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F60;&#x4F1A;&#x589E;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#x5230; pipline &#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x53D6;&#x8FD9;&#x4E9B;&#x533F;&#x540D;&#x7C7B;&#x5230;&#x6700;&#x9876;&#x5C42;&#x7684;&#x7C7B;&#x4E0A;&#x3002;</p>
-<p>5.&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x7684; Channel &#x5B9E;&#x73B0;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5199;&#x4E00;&#x4E2A;TCP/IP &#x7684;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x88AB;&#x5141;&#x8BB8;&#x8BBE;&#x7F6E; socket &#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x6BD4;&#x5982;tcpNoDelay &#x548C; keepAlive&#x3002;&#x8BF7;&#x53C2;&#x8003; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelOption.html" target="_blank">ChannelOption</a> &#x548C;&#x8BE6;&#x7EC6;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelConfig.html" target="_blank">ChannelConfig</a> &#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x4EE5;&#x6B64;&#x53EF;&#x4EE5;&#x5BF9;ChannelOption &#x7684;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x6982;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
-<p>6.&#x4F60;&#x5173;&#x6CE8;&#x8FC7; option() &#x548C; childOption() &#x5417;&#xFF1F;option() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;<a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;childOption() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;&#x7531;&#x7236;&#x7BA1;&#x9053; <a href="http://netty.io/4.0/api/io/netty/channel/ServerChannel.html" target="_blank">ServerChannel</a> &#x63A5;&#x6536;&#x5230;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x4E5F;&#x662F; NioServerSocketChannel&#x3002;</p>
-<p>7.&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#x7136;&#x540E;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5728;&#x673A;&#x5668;&#x4E0A;&#x7ED1;&#x5B9A;&#x4E86;&#x673A;&#x5668;&#x6240;&#x6709;&#x7F51;&#x5361;&#x4E0A;&#x7684; 8080 &#x7AEF;&#x53E3;&#x3002;&#x5F53;&#x7136;&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x8C03;&#x7528; bind() &#x65B9;&#x6CD5;(&#x57FA;&#x4E8E;&#x4E0D;&#x540C;&#x7ED1;&#x5B9A;&#x5730;&#x5740;)&#x3002;</p>
+</code></pre>
+<ol>
+<li><p><a href="http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html" target="_blank">NioEventLoopGroup</a> &#x662F;&#x7528;&#x6765;&#x5904;&#x7406; I/O &#x64CD;&#x4F5C;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x5668;&#xFF0C;Netty &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/EventLoopGroup.html" target="_blank">EventLoopGroup</a> &#x7684;&#x5B9E;&#x73B0;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x8F93;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x6709; 2 &#x4E2A; NioEventLoopGroup &#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;boss&#x2019;&#xFF0C;&#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x2018;worker&#x2019;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x5DF2;&#x7ECF;&#x88AB;&#x63A5;&#x6536;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x4E00;&#x65E6;&#x2018;boss&#x2019;&#x63A5;&#x6536;&#x5230;&#x8FDE;&#x63A5;&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#x6CE8;&#x518C;&#x5230;&#x2018;worker&#x2019;&#x4E0A;&#x3002;&#x5982;&#x4F55;&#x77E5;&#x9053;&#x591A;&#x5C11;&#x4E2A;&#x7EBF;&#x7A0B;&#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x4F55;&#x6620;&#x5C04;&#x5230;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/Channel.html" target="_blank">Channel</a>&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x4E8E; EventLoopGroup &#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x4ED6;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+</li>
+<li><p><a href="http://netty.io/4.0/api/io/netty/bootstrap/ServerBootstrap.html" target="_blank">ServerBootstrap</a> &#x662F;&#x4E00;&#x4E2A;&#x542F;&#x52A8; NIO &#x670D;&#x52A1;&#x7684;&#x8F85;&#x52A9;&#x542F;&#x52A8;&#x7C7B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Channel&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF0C;&#x5728;&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+</li>
+<li><p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x4F7F;&#x7528; <a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7C7B;&#x6765;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x5982;&#x4F55;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>&#x8FD9;&#x91CC;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7C7B;&#x7ECF;&#x5E38;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x5DF2;&#x7ECF;&#x63A5;&#x6536;&#x7684; Channel&#x3002;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelInitializer.html" target="_blank">ChannelInitializer</a> &#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#xFF0C;&#x4ED6;&#x7684;&#x76EE;&#x7684;&#x662F;&#x5E2E;&#x52A9;&#x4F7F;&#x7528;&#x8005;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel&#x3002;&#x4E5F;&#x8BB8;&#x4F60;&#x60F3;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#x7C7B;&#x6BD4;&#x5982; DiscardServerHandler &#x6765;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Channel &#x6216;&#x8005;&#x5176;&#x5BF9;&#x5E94;&#x7684;<a href="http://netty.io/4.0/api/io/netty/channel/ChannelPipeline.html" target="_blank">ChannelPipeline</a> &#x6765;&#x5B9E;&#x73B0;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x7A0B;&#x5E8F;&#x3002;&#x5F53;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x53D8;&#x7684;&#x590D;&#x6742;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F60;&#x4F1A;&#x589E;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x5904;&#x7406;&#x7C7B;&#x5230; pipline &#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x53D6;&#x8FD9;&#x4E9B;&#x533F;&#x540D;&#x7C7B;&#x5230;&#x6700;&#x9876;&#x5C42;&#x7684;&#x7C7B;&#x4E0A;&#x3002;</p>
+</li>
+<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FD9;&#x91CC;&#x6307;&#x5B9A;&#x7684; Channel &#x5B9E;&#x73B0;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5199;&#x4E00;&#x4E2A; TCP/IP &#x7684;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x88AB;&#x5141;&#x8BB8;&#x8BBE;&#x7F6E; socket &#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#x6BD4;&#x5982; tcpNoDelay &#x548C; keepAlive&#x3002;&#x8BF7;&#x53C2;&#x8003; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelOption.html" target="_blank">ChannelOption</a> &#x548C;&#x8BE6;&#x7EC6;&#x7684; <a href="http://netty.io/4.0/api/io/netty/channel/ChannelConfig.html" target="_blank">ChannelConfig</a> &#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x4EE5;&#x6B64;&#x53EF;&#x4EE5;&#x5BF9; ChannelOption &#x7684;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x6982;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
+</li>
+<li><p>&#x4F60;&#x5173;&#x6CE8;&#x8FC7; option() &#x548C; childOption() &#x5417;&#xFF1F;option() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;<a href="http://netty.io/4.0/api/io/netty/channel/socket/nio/NioServerSocketChannel.html" target="_blank">NioServerSocketChannel</a> &#x7528;&#x6765;&#x63A5;&#x6536;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;childOption() &#x662F;&#x63D0;&#x4F9B;&#x7ED9;&#x7531;&#x7236;&#x7BA1;&#x9053; <a href="http://netty.io/4.0/api/io/netty/channel/ServerChannel.html" target="_blank">ServerChannel</a> &#x63A5;&#x6536;&#x5230;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x4E5F;&#x662F; NioServerSocketChannel&#x3002;</p>
+</li>
+<li><p>&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x7ED1;&#x5B9A;&#x7AEF;&#x53E3;&#x7136;&#x540E;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5728;&#x673A;&#x5668;&#x4E0A;&#x7ED1;&#x5B9A;&#x4E86;&#x673A;&#x5668;&#x6240;&#x6709;&#x7F51;&#x5361;&#x4E0A;&#x7684; 8080 &#x7AEF;&#x53E3;&#x3002;&#x5F53;&#x7136;&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x8C03;&#x7528; bind() &#x65B9;&#x6CD5;(&#x57FA;&#x4E8E;&#x4E0D;&#x540C;&#x7ED1;&#x5B9A;&#x5730;&#x5740;)&#x3002;</p>
+</li>
+</ol>
 <p>&#x606D;&#x559C;&#xFF01;&#x4F60;&#x5DF2;&#x7ECF;&#x719F;&#x7EC3;&#x5730;&#x5B8C;&#x6210;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Netty &#x7684;&#x670D;&#x52A1;&#x7AEF;&#x7A0B;&#x5E8F;&#x3002;</p>
 
                                 
@@ -790,7 +793,7 @@ public class DiscardServer {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Writing a Discard Server 写个抛弃服务器","level":"1.3.2","depth":2,"next":{"title":"Looking into the Received Data 查看收到的数据","level":"1.3.3","depth":2,"path":"Getting-Started/Looking-into-the-Received-Data.md","ref":"Getting-Started/Looking-into-the-Received-Data.md","articles":[]},"previous":{"title":"Before Getting Started 开始之前","level":"1.3.1","depth":2,"path":"Getting-Started/Before-Getting-Started.md","ref":"Getting-Started/Before-Getting-Started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Getting-Started/Writing-a-Discard-Server.md","mtime":"2019-07-30T13:12:27.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-22T14:43:25.297Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Writing a Discard Server 写个抛弃服务器","level":"1.3.2","depth":2,"next":{"title":"Looking into the Received Data 查看收到的数据","level":"1.3.3","depth":2,"path":"Getting-Started/Looking-into-the-Received-Data.md","ref":"Getting-Started/Looking-into-the-Received-Data.md","articles":[]},"previous":{"title":"Before Getting Started 开始之前","level":"1.3.1","depth":2,"path":"Getting-Started/Before-Getting-Started.md","ref":"Getting-Started/Before-Getting-Started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Getting-Started/Writing-a-Discard-Server.md","mtime":"2021-08-10T14:32:58.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-31T08:22:59.522Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
